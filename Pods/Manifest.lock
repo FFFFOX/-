@@ -1,0 +1,28 @@
+PODS:
+  - Floaty (4.2.0)
+  - FSCalendar (2.8.1)
+  - OHMySQL (2.1.3)
+  - Starscream (4.0.3)
+
+DEPENDENCIES:
+  - Floaty (~> 4.2.0)
+  - FSCalendar
+  - OHMySQL
+  - Starscream
+
+SPEC REPOS:
+  trunk:
+    - Floaty
+    - FSCalendar
+    - OHMySQL
+    - Starscream
+
+SPEC CHECKSUMS:
+  Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  OHMySQL: 8bc54d2b8b9e1acfa0e652b18856a9cdbb24c431
+  Starscream: ef06f0961fff0880bca0604416d61141e4faca67
+
+PODFILE CHECKSUM: 6bdc662b9f2cccaa2b79fe7115547aa622640ec6
+
+COCOAPODS: 1.9.3

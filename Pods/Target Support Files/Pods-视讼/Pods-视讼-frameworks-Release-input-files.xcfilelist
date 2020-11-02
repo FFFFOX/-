@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-视讼/Pods-视讼-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
+${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework
+${BUILT_PRODUCTS_DIR}/OHMySQL/OHMySQL.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework

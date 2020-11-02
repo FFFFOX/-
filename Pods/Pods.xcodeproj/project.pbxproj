@@ -1,0 +1,1831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019AC93D9A5A6CE4B3486198C1F96FF5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */; };
+		01AA629EDA2A5BB1728F4EA2AB5ECA5C /* Pods-视讼-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9D1076F818A9E43B7071FD8D03B8F1 /* Pods-视讼-dummy.m */; };
+		01B546CFC7BC0F687D40B7246064ED9D /* plugin_trace.h in Headers */ = {isa = PBXBuildFile; fileRef = 1530ADFBC86C8BB232522AA47ED6D386 /* plugin_trace.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0673F3481EF6165F70E8F0990278BDC7 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B4019FFE19AAD88FE3BD24027DF68B /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		067C3F1528684D11245ADDCF3746D988 /* mysql_thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D7BFF82666A137B7E8C1925FFACA3DA /* mysql_thread.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		06AEDF225D90D7D86A86F20CD3423331 /* decimal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F1BE3380DFEBAE98E080A549C3D5507 /* decimal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		083B18F49C35728E9A7B828E73DF2EB8 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E963665951ED6EC8E41BDE2BDBA552 /* FSCalendarDelegationFactory.m */; };
+		0A0E8476402B53B091B91A7DE07E0008 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA059AA1DA1FA94FAE3B257761AA86D7 /* Engine.swift */; };
+		0C880D762097C192F231E5560AF4EE29 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E1AD36857FB2374E36C8DD04D83ECEEB /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CC54E4D0945262C1B835B699345B034 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC746175DAEBE040F0AC57DC71064D2 /* WebSocket.swift */; };
+		0CD6F85F531988628B04B3651F2D59BF /* OHConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D79274C89C85198E0A9768EF4FA4278 /* OHConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E4A225B2E9192B1B7C8DFB85B4303AF /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D81D8946CDC638CF6C9192AE6DE80F /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EDC14699EE4C5EC8BF5EAF630EAA17D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		0EDCAFA93DA0E7D98A2CF2386FEAA550 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E54A435669CB791484CDE6A056A82B /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F2DEB38F550FF5F643CD48BE324B009 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F54E60F73954FD977346935DAE0A550 /* FSCalendarSeparatorDecorationView.m */; };
+		113246517365BC6B53B8CD3DF63C7BCB /* sql_state.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F77D813DB8D84F6200F7D9B13F1691 /* sql_state.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1572414BB57E1CAEB0839E30A33979C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		15C3AE52D766B5A05D8B82C5F4EA80E2 /* mysql_sp.h in Headers */ = {isa = PBXBuildFile; fileRef = 3098182AFA0DA92925CD4F87F8C6A711 /* mysql_sp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		190BC16FCBB53F6C6F2C0618B6BE7DDA /* FoundationHTTPServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A5C2CBD2E1B8D031DD9DC0AFD9AE7B /* FoundationHTTPServerHandler.swift */; };
+		19120B5379BEC10E17A15ADF422FAC8F /* OHJoinConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 33502662968B69AF139A184748F14FD7 /* OHJoinConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		195E17A825CB18759C7D6511DACCB3E9 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A878B1C8A99A469E5ACBCBE2D1EE2 /* Server.swift */; };
+		19E712862F3F845060EA7DADEAD9BC59 /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B80576EF37B2BBCBD8DEAF2A49D9D9 /* FoundationTransport.swift */; };
+		1AA8F91974CADB6F7962D02885A3D2A0 /* mysql_ps.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAD81A4EE3B1F2A35CAEECCBB197408 /* mysql_ps.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1BCEC1C72A76476B70CE4B032A9D9B32 /* StringHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA2FED9E853DB28D2C500E67F44F03 /* StringHTTPHandler.swift */; };
+		1BDE0FED974714A835CB89AD1062FF0D /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E12C31DE4DCE661ADCABA1101068CF /* FSCalendarExtensions.m */; };
+		1E0C257A13260508F9FC03D637764614 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5330646393E68A88F3341265EF02C51F /* FSCalendarStickyHeader.m */; };
+		1ED6A018A50C929244C03FC6A46670F8 /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F0F54F915E20DF028B067968C562DA /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F9A87C9073DC8D74B5675A044C4BEC5 /* OHMySQLQueryContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507B304134D1703782591C1115A2E05 /* OHMySQLQueryContext.m */; };
+		1FE2D19EF790109C3C32CEBBD18D4984 /* UIView+Draggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067959C4192EFB79C026B2B443518211 /* UIView+Draggable.swift */; };
+		2126BAE2A3A69461E8B00562CFF6D67C /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAD7FDB5064E0E82E192A4A61ED0993 /* FSCalendar-dummy.m */; };
+		21CD2879B82C5215F398A724067A31F8 /* my_thread_local.h in Headers */ = {isa = PBXBuildFile; fileRef = 24016537EB8E879CF1F46942B7A01E6A /* my_thread_local.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2E5EC07CFD18A132E57569D00117C703 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B185F3DCE37E17F7C0D852BD2C73186B /* FSCalendarConstants.m */; };
+		2F260267453AF91B84F10232BEE61218 /* plugin_auth_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B5A8740EA9727670E9C80272A6CFCB6 /* plugin_auth_common.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2F2D5E89B3604AF7AFD47D3036023310 /* OHMySQLUser.h in Headers */ = {isa = PBXBuildFile; fileRef = CE3D988C2E75822C2A6CCF226B75D137 /* OHMySQLUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F91ECF30B336F8F25CB49D70CE0CF3E /* mysql_file.h in Headers */ = {isa = PBXBuildFile; fileRef = 216E75E8E24018CFD561F13E229BB90C /* mysql_file.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30843F8E73689D16CE4F72F38761B5A9 /* typelib.h in Headers */ = {isa = PBXBuildFile; fileRef = 222D1ABF8886AE8F9E2861CA004BFE57 /* typelib.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		31B3A74CC60939CBA6C119E8C83444A9 /* sslopt-vars.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C60C58F3B7955034B9137827E1B1C0 /* sslopt-vars.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3511025E13FBE6997741DD69BFB8CF21 /* sql_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 944647B427AE1673514A5F34C03DCB5E /* sql_common.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		359D3455A362843977E8E3076B7D8162 /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6EA26799403635E84D5500A31F6E02 /* TCPTransport.swift */; };
+		362E5F33E31735145DDA774DED3C1F74 /* get_password.h in Headers */ = {isa = PBXBuildFile; fileRef = E71E827B39BA517F15FDEFDDA227C565 /* get_password.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		36CE097170B5FAD356597AC65FEE30C0 /* client_plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E5386AF777E2F92FE4BD45D1E3321D /* client_plugin.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		36D1530899987EF165D0AFC6D2B9EAF2 /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5701D92C728368E099D27311292D50 /* FrameCollector.swift */; };
+		37E36C07C168E5737FBA757736AB1263 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71AFD98F78FF90BD8F94838BC77E725 /* Data+Extensions.swift */; };
+		39CC38779B3593A7C5A067041E789B5D /* Floaty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 241C5FE4DB8F6AEC1E10B99AFA1D23F9 /* Floaty-dummy.m */; };
+		3A05325C0022BEFF6AFE524CBF418272 /* NSString+Escaping.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A21B9E4D43FA64873ABBE0DDD0E97B /* NSString+Escaping.m */; };
+		3ECFF69A071F49B6C6CC70DACFF74387 /* NSString+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = A74C6901A3BC5B456148FFFC8E84B676 /* NSString+OHSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F0F6CEFD0801BEA64D1A265AE92FC05 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6803F6A9FCDE45E30527FADE8CFB27 /* FSCalendarWeekdayView.m */; };
+		3F7ECF1B43161B03BEB8AC1A7265D1AB /* OHMySQLQueryRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C99E29E8B0EE3A98D94CE7D14B985659 /* OHMySQLQueryRequestFactory.m */; };
+		40266BF5FDD5DC1BBF1C9AC152EF8D1B /* sslopt-case.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE53BF4DFC586695852DE3072FA4867 /* sslopt-case.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		42FFD2F6656561EEC98F07FCDFEE3F32 /* mysql.h in Headers */ = {isa = PBXBuildFile; fileRef = C2EA6C4709BDB9A8C2356941617FCC9C /* mysql.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4572F22239A84AC23B262764D429E2EB /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53911FE35CEB86D6C8B02F7951B2B4 /* Framer.swift */; };
+		45F2AEBA571A3FD5DE4419782E96972A /* mysql_com.h in Headers */ = {isa = PBXBuildFile; fileRef = E9DAAD3D3602AFF315A6E42E58D3CC97 /* mysql_com.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		46114BE42ACC2D40EB22AEE93F28923A /* OHMySQLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 738462D1292C339382F2D36E94470FDE /* OHMySQLUser.m */; };
+		4621A95DB7D9B3A07C0DB6FAEC68F138 /* OHMySQLQueryContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB90ECE7677C6CEB2DFD66396A9CF14 /* OHMySQLQueryContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46A9419A891FAD6FB96254769106A220 /* Pods-视讼-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8661B6FFEFCB5E0475019BC77B648C4C /* Pods-视讼-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		487467099AB8229395A1A005DC6AD4F4 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EE3C300326D10906F074D6C6FB0DEC /* FSCalendarCollectionViewLayout.m */; };
+		48DC50A48CEC3AEC56CB6C3144EF4D47 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C2E21473797579CD954AB900476082 /* FSCalendarDelegationProxy.m */; };
+		495FC41C10FFC231BD1212D5AD1D4F95 /* m_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 39DE7FA8F2E97C49B1903A1E38A3A32B /* m_string.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		496460DCABF803C189AD212338717190 /* m_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 8652112A3BC2CC3EC0146B90FBFA7124 /* m_ctype.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4B06E7A9994CCDB40333001E83F1FD79 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = B886A8D7EFCB34951F13D00E23F0C68E /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B11C48CCA7FD866A774B0E49FB595DA /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 852C46E7DBB37F6B093D2668F2E1E276 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C79C31591A80E7209E52F0928F7546C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAAAD93DFCDB21CED1A29C6EA09B909 /* FSCalendarCell.m */; };
+		4D322C7978617308B276D6F4902C2335 /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F6D3559A49E3D7272837994E41C75 /* WSEngine.swift */; };
+		4DD6DCEF8081B06AC9A8160FAB4363A8 /* NSObject+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A6FBC18142A36B95C87846E0A4D521 /* NSObject+Mapping.m */; };
+		4EA06FC9044511C55BCB5B4AE03982F1 /* mysql_memory.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB232DB097628D05DD0149995551EED /* mysql_memory.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4F532C4DBE75E0119B58A6E1D4DC9DCB /* byte_order_generic.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD7E9DBE8A012C9871664FC9C891430 /* byte_order_generic.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4F71301967F8B9B40B1E2AFB99111D5A /* OHMySQLQueryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 897EA00125E2CEC1B4A1C69541D95B40 /* OHMySQLQueryRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52565719316CADB05B7C8FA79964519A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6162418C5AB53AB24866002A6B5E55ED /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54B59DC5B10F82C09A5153A2DF5EF843 /* OHRefreshOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 38D4A5E90FCD8BE7C9E6AF5DE67ECB73 /* OHRefreshOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58AD6758D9237AFCBAE75CF5AA275C47 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = F78B23DAD5BB5C293CD5E314DE6676C2 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D07F928A96206A23E9988E447DBC3C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */; };
+		5E93D248D94CB5A0CC429D72B88E2985 /* psi_memory.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F7F1C3C55B4F1F060F76EC0623B84C /* psi_memory.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6005CDF3DD1030EBA80EE7D44EB80300 /* my_sys.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E370E1AC41F98590752427A550E95E2 /* my_sys.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		62DF8AA810BE9CDCE93917794EAA29AF /* NSNumber+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B54097D4F0129721ED9D68E7F1A69CF /* NSNumber+OHSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6501315DE26BE0FFE3210E0C493E7760 /* client_authentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 12EF12379E091DE4E349C09018B1B65B /* client_authentication.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		664237F44F9A9ECE3394D4089CC939A3 /* thr_cond.h in Headers */ = {isa = PBXBuildFile; fileRef = F11065693432EC3EDB60F3BB90B4F264 /* thr_cond.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		68AC7600925DE220AAEBA3BBA81FE701 /* OHMySQLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E02592744702D443CEE34A02F9DE44B /* OHMySQLSerialization.m */; };
+		6A2F136CC06B047188F944FE881C48CE /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFD0899F9FDBB7462054462AA0B0A3B /* FloatyViewController.swift */; };
+		6CF04FDA8240D858280268329C2674E9 /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A09FD60A9B454C6ECAA87AFF723ACCCE /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EE7F42B88F981956ED6EA24FE060AEF /* mysql_embed.h in Headers */ = {isa = PBXBuildFile; fileRef = 464B740AB050826B821A2697179B87E1 /* mysql_embed.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		703C0586C478A922E21934D3B149A71E /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E6A08A39C9F4299F5B223F214938D8 /* Starscream-dummy.m */; };
+		7449001AB0C0DD1AB981F46B887F332C /* mysql_statement.h in Headers */ = {isa = PBXBuildFile; fileRef = 11590593AACA7794FE6842058BB0CCA7 /* mysql_statement.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		793D18E42CC454D1C4225339797DB9EB /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D270A7556502095F85D59EDCB363D /* WSCompression.swift */; };
+		79DD94D0E8AAEADF703ABA58D0DF73F6 /* OHProtocolType.h in Headers */ = {isa = PBXBuildFile; fileRef = F518B435F22B43038FDB9B135E1D4C6C /* OHProtocolType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A35B9506FE72538A9F9C64CBEEEEB25 /* service_my_snprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F44A2C3481A7D31BE0EF68C40309AB /* service_my_snprintf.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7B2C14BA8AF4E5981ED01458225D7AA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */; };
+		7BD6F1A7BAFAF1259018A256AD049B09 /* service_mysql_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = FCDBC1D7D35A7980C54FEE77AC7339C9 /* service_mysql_alloc.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7CB15D5F4D2BEC59747D59E267DAEBBF /* mysql_table.h in Headers */ = {isa = PBXBuildFile; fileRef = E011C1A30D850DCBAA77AD2B6C5FF659 /* mysql_table.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7DEF75CA2D2D0AB2FECA501A0EEB5D5A /* NSString+Escaping.h in Headers */ = {isa = PBXBuildFile; fileRef = F8EEC110826F70DF3BD10E350BEFFA90 /* NSString+Escaping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EAEA451E04E5E96AFE6D1B63313F624 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 274B1FED4ACB3F9E82A671ECE07B4EAD /* FSCalendar.m */; };
+		8481AF61ECD90E46926ECF0F09D95451 /* psi_base.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C78120EA5337B5656ECAC48909F84F /* psi_base.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		85B27EB436ACCFA2565BAF454490766F /* mysql_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B2E8824F584C465B24C4B0E788C970 /* mysql_time.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8633C154CEC62F5ECAE687CC7ED8067E /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 289C0A417CBF4D8B44C54341056041A7 /* FSCalendarAppearance.m */; };
+		8675BDAD0197AD032F88EE838C8C66EE /* byte_order_generic_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = DE2ED054BC4A25907B085C1CE4205FDB /* byte_order_generic_x86.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		885D59F337F85839B55F5BDAFE9C81AC /* OHMySQLStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8406289BB54AFD13EB4695C3DA57C1 /* OHMySQLStore.m */; };
+		88C2DE224152FB302F50105ECFBB0492 /* mysql_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 21E7AECB299FFAB6D99DCBB5DEF90F66 /* mysql_version.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		894E47358149672D5810C31E4B64AF0D /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599C6F3AD9D85E7C3DC5F3D0B60EDE4 /* HTTPHandler.swift */; };
+		8AB76EF4157ADE0806FA3B4A1549EAD2 /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCAA91FF52E712725DBD70EA609018D /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C40574E60CBD4DD5A0DE79C5D3F39D3 /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EA062A77CEDFDFD648E9B4228D9C2 /* FloatyWindow.swift */; };
+		8E81DCC864B08EADB6405EE39DD225A8 /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E632E6A4CAC67AC37CEA954E8F57D89A /* Floaty.swift */; };
+		909EF5A73EB9DBC79B385B787B1D83AA /* my_dbug.h in Headers */ = {isa = PBXBuildFile; fileRef = 66553769A45C517F29F5698DD4EE970A /* my_dbug.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		919B72E0CE7743838A947288D10AAEA3 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A7AB83241A0276A73A75928C6061D6 /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91A96B98AD78AAD881AB6389B1368405 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52E58D5878466DD3D7711FFAEAE6AF0C /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92A7B27AE36742717A18891C4C3C68D6 /* errmsg.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F1BF222DCF6C66788BAD2FBCE02A83 /* errmsg.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		93C4FD03E6AAC5AEFE31EC4845117BF8 /* OHCharsetEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 596A0A73960B2AED5059C9240C673741 /* OHCharsetEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		941D144549F3EB278F2B41B3A969F80A /* my_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EF239B4C2D0D3ADBA5EDF6C234D6F65 /* my_alloc.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		946911E4FFC48BF8F84D076D258A1322 /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F15C1D49D896D83E7B809237A391867 /* FoundationSecurity.swift */; };
+		94DED50B7E51FF3FBDE88B1CB9059FDD /* OHMySQLStoreCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = FB316422453BA9DD5B8AF0AF8A62C9E9 /* OHMySQLStoreCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95A9A07CB261E740146CF83F12FE2B94 /* mysql_com_server.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ACB220B94E32BE883E45BF22273B190 /* mysql_com_server.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9667C4192F7DE794CC15F20721F52F39 /* OHMySQLQueryRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 403FAF8B2AAA7BC0AE38E7840AB2F26E /* OHMySQLQueryRequestFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96866903CBB09630043FA958D95F86B0 /* my_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 66D621A596BEA976537AFFA2E42852B0 /* my_dir.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		96AD7FC2E1320077AD4723B0B03C6E22 /* my_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F21B7779D8CE670E22226D1A3D62BD4 /* my_config.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		97C5AE9E4ECA09A175D50BF5E758FB61 /* OHSerializationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B106EDC45815FF1D9B0A0C4051F0AB5 /* OHSerializationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9884328FF17DECDF26FAA84158AF92A0 /* OHCharsetEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 67494654D7F5D4E6FAD75D3670D52A09 /* OHCharsetEncoding.m */; };
+		99CC2D5DC15DBA9F5A494E76FF940B62 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFE8E9FCE9E584805258679E65A61F3 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F91E255691737ECD97D6469EC50B045 /* mysql_transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 07EC854C05461CACA1CE2235B75CBC62 /* mysql_transaction.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A1D0FC543770F1939FCAF6D2620281E4 /* mysql_stage.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CCD74AC17080DF966A97720C17A6E /* mysql_stage.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A1EC7268E2EDB70A2EC3203ED0420FD5 /* NSNumber+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E60EDCEC42631E15DAA2EFF1845EB290 /* NSNumber+OHSerialization.m */; };
+		A1F2E1A33C4F95073E5F68F888849F17 /* OHMySQLStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBF6DE5C8B1A2A44E5D7BFF03DD1A4A /* OHMySQLStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A21325A740B869886C08C30D2B10A56D /* my_compiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 70551656A942C4E04704AC3D5626879F /* my_compiler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A450283DCF941BBFA52EDAC5289A8BEA /* binary_log_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB9C64B5452C3BA44CD4B57000828B2 /* binary_log_types.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A68FA9D283C2FD2D8483F693E2A176D1 /* OHMySQLStoreCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8333300D27573E17563EC7D28A5BB471 /* OHMySQLStoreCoordinator.m */; };
+		A717D8899A5BF391791350A2D112BBDA /* big_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = E07A24361FFEB8CFBFC13FD815624742 /* big_endian.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA33945BE95139CF43C2BB17A00AC357 /* OHMySQL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB79889FA54C779FB273096900C777B /* OHMySQL-dummy.m */; };
+		AA34927E30C53FD4F6F20CB467B5196B /* my_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 254703A970D3C4BB6C0C33421CA64DDF /* my_list.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AD8FAFF23D4F2F165F00391687A6315D /* psi.h in Headers */ = {isa = PBXBuildFile; fileRef = FF638D6AD7F760F8134C4D16E5F60591 /* psi.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AECB71D69657219B919D2943CD19245B /* OHMySQLTimeline.h in Headers */ = {isa = PBXBuildFile; fileRef = C5EEBBF8C033C76A6519A810580DC73D /* OHMySQLTimeline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF0763B08539B0F79D8254AFA66A375E /* my_command.h in Headers */ = {isa = PBXBuildFile; fileRef = 93773EFC2F68EDD162DF8EF29245B971 /* my_command.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AF49D749CAE965784D16E579C94EACB1 /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCFAB02A8694A2B88561CF27E55E66 /* FloatyDelegate.swift */; };
+		AF96C5E4BBC8800EA0E1AB3B1E9F31D4 /* OHSSLConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 01B18638A8C5672CD8B81EA066626B49 /* OHSSLConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B21589129660B7C8890B375401DDFE97 /* mysqld_error.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE35D5AAB168E55FFDB903703599AE5 /* mysqld_error.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B9F3FAEB3137EE8A5E3F47C14C5F2F03 /* my_global.h in Headers */ = {isa = PBXBuildFile; fileRef = F3D70E6922A7DE69986603E25B9AC9FF /* my_global.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BADEDF3F5C6B8ECA687B3061C65C7E5D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 24644B6E9C030662425F5C1E88CEC0F3 /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBBF060F6CC86237D93587F874376853 /* thr_mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FAFF5059EBC6085A837E4B72C8104B /* thr_mutex.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BC5094802548BD1CF692756707D0D8E9 /* OHLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 2931DB955A0FBFBB489E0207157369D1 /* OHLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C07413B05F2A3CD997EBCE9D8EE5FD08 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E1A343CC85B55D6ECBCAD2B268BEF /* Compression.swift */; };
+		C2809B4763602D15A7384398343AE406 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966578AA955455E75FA6111E16A06BDC /* Transport.swift */; };
+		C2FDC1E6EF1C09CBEF582876CB00A48C /* NSData+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F29CA2BA64ED10612BBE1BC72F82C0E4 /* NSData+OHSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C830DA8E913ECBCF786ECB939918B2 /* FSCalendarSeparatorDecorationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 59AE151BEADC63C44B53483ABE8A6E51 /* FSCalendarSeparatorDecorationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C404585543BB15A332A69776F7F5B71C /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB59A330DB1DFE93782B6FC03DC7BBD /* FloatyItem.swift */; };
+		C476BDEFC2C6E6CC23C0613BC70FC1B3 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E13B6C0346B21A9448803E9AFB8928F /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C808D0298CC1CD6C13E283663535B259 /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F03FC0A66C67A46F2C92EB0F7708A /* WebSocketServer.swift */; };
+		C879BE0E77FE64A016D4EE841702577B /* OHMySQLContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EBE9C4356A83C1D35070CA0373530D1 /* OHMySQLContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCDFE079D2DA1E51162E69A3A28BF23F /* NativeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72CD177A2025D299700BA9D0CA00AFD /* NativeEngine.swift */; };
+		CCF844187199745A1DECB644BD844941 /* Floaty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE78A720A6D45FEC17D840CA7E7480CA /* Floaty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEBE9A32B224306632C22144F156749B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		CEC2E9DC76531DD6C836287D7EAE488E /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B45EC203CAC67B0A065345D2BC6B9F54 /* NSString+Utility.m */; };
+		D192D52340F6B27DA840BE2FA9F49EE9 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A584B149A876D9398DB8B9C966BCDC /* FSCalendarTransitionCoordinator.m */; };
+		D41FFE4174591E2EAEA0D9FF1E96AD5D /* thr_rwlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DAC223ABDA094192E28CB927245CF88 /* thr_rwlock.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D61B5860091F90188A125D942FEB7906 /* OHSSLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 29ED9304763D882C19536D438460DA61 /* OHSSLConfig.m */; };
+		D6225EC558EF8AE0E631D81341BAB795 /* my_xml.h in Headers */ = {isa = PBXBuildFile; fileRef = F32518ED1B5616DA00BCCB646A7AC746 /* my_xml.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D63D7927B07FD99B4107E40871BF7592 /* mysql_mdl.h in Headers */ = {isa = PBXBuildFile; fileRef = A402AEF4A56BC34705B10538044E59B9 /* mysql_mdl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D65C5A2E8CEFAA28F4C90697A8931815 /* my_getopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D70C5A9FCE128E15BDC73EE5F756C97 /* my_getopt.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DA25193E27ABCAC731A9549A566C5FDB /* FoundationHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC45E921EF60FB2FFBDA4D754C3E92 /* FoundationHTTPHandler.swift */; };
+		DA297D9EC5FA455E855BE384C92CAFEC /* OHJoinConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4149A29C7BA939444787D25EDDC50726 /* OHJoinConstants.m */; };
+		DB7515AD538361B0A6E6368A155CB563 /* sslopt-longopts.h in Headers */ = {isa = PBXBuildFile; fileRef = F91612893DD75CA3DD21CE68E6011716 /* sslopt-longopts.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DB860D98F5F1523CE71B49D880B330A0 /* OHMySQL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F16B7DA49FBABA743A6B7C8FCDF2BDD5 /* OHMySQL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEA8746B8ACC9D6CE9EBDEA8F8CB2E27 /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 51590D484CF0B738172FFEFF8A7EBE2A /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E05EEB718FF3C5C736F0ED246F63981B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		E07DEB6A81DC36C70FC97B580DA75406 /* mysql_idle.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E80A82B402434BDFB18A0098F53325 /* mysql_idle.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E2569E6D4DF391CF87319A3D3F33C4E7 /* keycache.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E44F40EF62E42FC78E576A9FBAE6D9 /* keycache.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E34B6BDCC3453809981421E46A89B460 /* OHMappingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7588E5CDA433ACB8450E3600CBF96B0B /* OHMappingProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3BEA23FE665466355D08297629B27D7 /* NSData+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7A6665BCB41F05887E055235CD5FA /* NSData+OHSerialization.m */; };
+		E4105D1358A1CC04806C4453F28F221C /* OHMySQLQueryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B02918470B96E94402CC3FC350E427 /* OHMySQLQueryRequest.m */; };
+		E56AE3ED48D8E87D1CD9718291E0B5E5 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02779AB18AD6B8A5F8EAE88B8DBDC73E /* FSCalendarCollectionView.m */; };
+		E69A9B7350642E1BB97623E925F7566B /* little_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = E0B74BC2D18F2EB7DB57874CE2A1A10A /* little_endian.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		EA35B998B0F4F37A7452CFDED85839FF /* OHResultErrorType.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA4F161A2AF2254BF11EE8506A0273B /* OHResultErrorType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAC6C3A94BC9FEE0EC094607566969E1 /* OHMySQLContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7397740476371CBCA7B0901C942566D /* OHMySQLContainer.m */; };
+		ED83345166E10D1FB2880AB6737F7172 /* mysqld_ername.h in Headers */ = {isa = PBXBuildFile; fileRef = 854BED4A4884B64588400F3C5F155ADB /* mysqld_ername.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		EE8114861B9841FABEF2DF07C40CEEE9 /* NSString+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1BD0DFAAC6918A9B111E03D18FB62F /* NSString+Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0DA3829BFBD59317C506BC4DBFC563C /* NSString+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1AE7627080E1994187FC609C2A54CC /* NSString+OHSerialization.m */; };
+		F23A86404C2D998825C8A071885323B7 /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBC1FC431F19C6BE47F01D4A3F63BE /* FloatyManager.swift */; };
+		F4D86DAACC44D52F4580AD0721D10459 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F7A754B02B79A459AF39D0B04C438 /* Security.swift */; };
+		F86D9BFA86B8FB0BCF87E1A844863732 /* OHMySQL.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C6F92516E69439172BAF708AE10F0B /* OHMySQL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F982A946B829D4AF9AF852D68FDC3A8A /* OHMySQLTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = C19AA3A19EF7A31F745088995DA8A459 /* OHMySQLTimeline.m */; };
+		FA826300A36F34935F5DFA7C64920E6F /* mysql_lex_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B1474C82A9EA5EB3FFE0C2670AD2FB1 /* mysql_lex_string.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FB0D64E1CBAA1D9E596C0578BAEBE8BC /* OHMySQLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2E20C09D4830B90108F609577AFBFD /* OHMySQLSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC65871FBF3039E32226D139E8597FD1 /* NSObject+Mapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 488A7D7FF2F1FA8EE050ABE5B636C73F /* NSObject+Mapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCB39E37B3A2B6862D481A5D53EDBCF5 /* my_thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B9E62837C2E35D5A413FDB82C46725 /* my_thread.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FDB26845AA353936661B049BA64ABD25 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 275E09DB4D04D8A77FD880ABC22E01F0 /* FSCalendarCalculator.m */; };
+		FE7F13AD197EB5085A656131A7BD5C1E /* mysql_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 747652C20551B7E55F50B61FD7AFB58B /* mysql_socket.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FF026C7E0CF8A511BE11FB8A33C26B05 /* my_byteorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F646F896BE5FD808D9FDB730756275 /* my_byteorder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FF77236482AFFCE182ADD5A66C481578 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		FFF8E80B6D3629DB84D475C728EFCA1D /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DAF49B2E1CE75B6A104585A554FC89 /* FSCalendarHeaderView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00D12C433F34CF8D54E5805C52349BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 523C0639A1C4C93383B4DF83058D0094;
+			remoteInfo = OHMySQL;
+		};
+		7C4D3DFA11F06FCD565C4BCED9A990D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2A775A88EA787684F2905BCB73F96D1;
+			remoteInfo = Floaty;
+		};
+		92F847D926855F94E3AA71E7E888C390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		A54C6CDD854B5C4E3E1CEA2204386B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13285D54682BEAD805960F9E6EEB9949;
+			remoteInfo = FSCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0112C40B1D091E9D0D254B1E848542B2 /* Pods-视讼-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-视讼-acknowledgements.plist"; sourceTree = "<group>"; };
+		01ADB5DB43FD314DD96E2E466B00A9AC /* OHMySQL-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OHMySQL-Info.plist"; sourceTree = "<group>"; };
+		01B18638A8C5672CD8B81EA066626B49 /* OHSSLConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHSSLConfig.h; path = OHMySQL/Models/OHSSLConfig.h; sourceTree = "<group>"; };
+		02779AB18AD6B8A5F8EAE88B8DBDC73E /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		03E5386AF777E2F92FE4BD45D1E3321D /* client_plugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = client_plugin.h; path = OHMySQL/lib/include/mysql/client_plugin.h; sourceTree = "<group>"; };
+		0599C6F3AD9D85E7C3DC5F3D0B60EDE4 /* HTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHandler.swift; path = Sources/Framer/HTTPHandler.swift; sourceTree = "<group>"; };
+		067959C4192EFB79C026B2B443518211 /* UIView+Draggable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Draggable.swift"; path = "Sources/UIView+Draggable.swift"; sourceTree = "<group>"; };
+		07B9E62837C2E35D5A413FDB82C46725 /* my_thread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_thread.h; path = OHMySQL/lib/include/my_thread.h; sourceTree = "<group>"; };
+		07EC854C05461CACA1CE2235B75CBC62 /* mysql_transaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_transaction.h; path = OHMySQL/lib/include/mysql/psi/mysql_transaction.h; sourceTree = "<group>"; };
+		07F8F10918487FF1BA0E407644EB0F6D /* FSCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.release.xcconfig; sourceTree = "<group>"; };
+		08EE3C300326D10906F074D6C6FB0DEC /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		09C60C58F3B7955034B9137827E1B1C0 /* sslopt-vars.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "sslopt-vars.h"; path = "OHMySQL/lib/include/sslopt-vars.h"; sourceTree = "<group>"; };
+		09E44F40EF62E42FC78E576A9FBAE6D9 /* keycache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = keycache.h; path = OHMySQL/lib/include/keycache.h; sourceTree = "<group>"; };
+		0BB9C64B5452C3BA44CD4B57000828B2 /* binary_log_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = binary_log_types.h; path = OHMySQL/lib/include/binary_log_types.h; sourceTree = "<group>"; };
+		0D70C5A9FCE128E15BDC73EE5F756C97 /* my_getopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_getopt.h; path = OHMySQL/lib/include/my_getopt.h; sourceTree = "<group>"; };
+		106F571D3ACF4183E54A3738FEE50462 /* Pods-视讼-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-视讼-frameworks.sh"; sourceTree = "<group>"; };
+		10982E41D37CBADF7CE9C922D0CBC8DE /* Pods-视讼-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-视讼-acknowledgements.markdown"; sourceTree = "<group>"; };
+		11590593AACA7794FE6842058BB0CCA7 /* mysql_statement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_statement.h; path = OHMySQL/lib/include/mysql/psi/mysql_statement.h; sourceTree = "<group>"; };
+		12EF12379E091DE4E349C09018B1B65B /* client_authentication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = client_authentication.h; path = OHMySQL/lib/include/mysql/client_authentication.h; sourceTree = "<group>"; };
+		13D2BEF117CCBE5F83EAB5E1A5DF8F89 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		1530ADFBC86C8BB232522AA47ED6D386 /* plugin_trace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = plugin_trace.h; path = OHMySQL/lib/include/mysql/plugin_trace.h; sourceTree = "<group>"; };
+		16F44A2C3481A7D31BE0EF68C40309AB /* service_my_snprintf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = service_my_snprintf.h; path = OHMySQL/lib/include/mysql/service_my_snprintf.h; sourceTree = "<group>"; };
+		17D81D8946CDC638CF6C9192AE6DE80F /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		1ACB220B94E32BE883E45BF22273B190 /* mysql_com_server.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_com_server.h; path = OHMySQL/lib/include/mysql_com_server.h; sourceTree = "<group>"; };
+		1B2184827C938C299866787BE7B9F641 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		1DAC223ABDA094192E28CB927245CF88 /* thr_rwlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thr_rwlock.h; path = OHMySQL/lib/include/thr_rwlock.h; sourceTree = "<group>"; };
+		1EE53BF4DFC586695852DE3072FA4867 /* sslopt-case.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "sslopt-case.h"; path = "OHMySQL/lib/include/sslopt-case.h"; sourceTree = "<group>"; };
+		1F32FF24E68E6510F0626C2CD55B5F44 /* libmysqlclient.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libmysqlclient.a; path = OHMySQL/lib/ios/libmysqlclient.a; sourceTree = "<group>"; };
+		216E75E8E24018CFD561F13E229BB90C /* mysql_file.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_file.h; path = OHMySQL/lib/include/mysql/psi/mysql_file.h; sourceTree = "<group>"; };
+		21E7AECB299FFAB6D99DCBB5DEF90F66 /* mysql_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_version.h; path = OHMySQL/lib/include/mysql_version.h; sourceTree = "<group>"; };
+		222D1ABF8886AE8F9E2861CA004BFE57 /* typelib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = typelib.h; path = OHMySQL/lib/include/typelib.h; sourceTree = "<group>"; };
+		24016537EB8E879CF1F46942B7A01E6A /* my_thread_local.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_thread_local.h; path = OHMySQL/lib/include/my_thread_local.h; sourceTree = "<group>"; };
+		241C5FE4DB8F6AEC1E10B99AFA1D23F9 /* Floaty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Floaty-dummy.m"; sourceTree = "<group>"; };
+		24644B6E9C030662425F5C1E88CEC0F3 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		254703A970D3C4BB6C0C33421CA64DDF /* my_list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_list.h; path = OHMySQL/lib/include/my_list.h; sourceTree = "<group>"; };
+		274B1FED4ACB3F9E82A671ECE07B4EAD /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		275A878B1C8A99A469E5ACBCBE2D1EE2 /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Sources/Server/Server.swift; sourceTree = "<group>"; };
+		275E09DB4D04D8A77FD880ABC22E01F0 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		289C0A417CBF4D8B44C54341056041A7 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		2915C263A5C5C8012A8C1E97512DC6A8 /* Floaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Floaty.framework; path = Floaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2931DB955A0FBFBB489E0207157369D1 /* OHLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHLogging.h; path = OHMySQL/Constants/OHLogging.h; sourceTree = "<group>"; };
+		29ED9304763D882C19536D438460DA61 /* OHSSLConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHSSLConfig.m; path = OHMySQL/Models/OHSSLConfig.m; sourceTree = "<group>"; };
+		2ADD2952AEE0E249357D56B6F67C420C /* Floaty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-prefix.pch"; sourceTree = "<group>"; };
+		2C2E20C09D4830B90108F609577AFBFD /* OHMySQLSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLSerialization.h; path = OHMySQL/OHMySQLSerialization.h; sourceTree = "<group>"; };
+		2D7BFF82666A137B7E8C1925FFACA3DA /* mysql_thread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_thread.h; path = OHMySQL/lib/include/mysql/psi/mysql_thread.h; sourceTree = "<group>"; };
+		2EBE9C4356A83C1D35070CA0373530D1 /* OHMySQLContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLContainer.h; path = OHMySQL/OHMySQLContainer.h; sourceTree = "<group>"; };
+		3098182AFA0DA92925CD4F87F8C6A711 /* mysql_sp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_sp.h; path = OHMySQL/lib/include/mysql/psi/mysql_sp.h; sourceTree = "<group>"; };
+		33502662968B69AF139A184748F14FD7 /* OHJoinConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHJoinConstants.h; path = OHMySQL/Constants/OHJoinConstants.h; sourceTree = "<group>"; };
+		34DAF49B2E1CE75B6A104585A554FC89 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		38B02918470B96E94402CC3FC350E427 /* OHMySQLQueryRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryRequest.m; path = OHMySQL/Models/OHMySQLQueryRequest.m; sourceTree = "<group>"; };
+		38D4A5E90FCD8BE7C9E6AF5DE67ECB73 /* OHRefreshOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHRefreshOptions.h; path = OHMySQL/Constants/OHRefreshOptions.h; sourceTree = "<group>"; };
+		39DE7FA8F2E97C49B1903A1E38A3A32B /* m_string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_string.h; path = OHMySQL/lib/include/m_string.h; sourceTree = "<group>"; };
+		3B106EDC45815FF1D9B0A0C4051F0AB5 /* OHSerializationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHSerializationProtocol.h; path = OHMySQL/OHSerializationProtocol.h; sourceTree = "<group>"; };
+		3CBF6DE5C8B1A2A44E5D7BFF03DD1A4A /* OHMySQLStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLStore.h; path = OHMySQL/Models/OHMySQLStore.h; sourceTree = "<group>"; };
+		3D79274C89C85198E0A9768EF4FA4278 /* OHConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHConstants.h; path = OHMySQL/Constants/OHConstants.h; sourceTree = "<group>"; };
+		3DCBC1FC431F19C6BE47F01D4A3F63BE /* FloatyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyManager.swift; path = Sources/FloatyManager.swift; sourceTree = "<group>"; };
+		403FAF8B2AAA7BC0AE38E7840AB2F26E /* OHMySQLQueryRequestFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryRequestFactory.h; path = OHMySQL/OHMySQLQueryRequestFactory.h; sourceTree = "<group>"; };
+		412D9D989B02EB366606A5D9F486A0E9 /* Floaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Floaty.debug.xcconfig; sourceTree = "<group>"; };
+		4149A29C7BA939444787D25EDDC50726 /* OHJoinConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHJoinConstants.m; path = OHMySQL/Constants/OHJoinConstants.m; sourceTree = "<group>"; };
+		438CCD74AC17080DF966A97720C17A6E /* mysql_stage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_stage.h; path = OHMySQL/lib/include/mysql/psi/mysql_stage.h; sourceTree = "<group>"; };
+		446F0509B9F1FE2268E74C5F3D5F470C /* FSCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.debug.xcconfig; sourceTree = "<group>"; };
+		453D270A7556502095F85D59EDCB363D /* WSCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCompression.swift; path = Sources/Compression/WSCompression.swift; sourceTree = "<group>"; };
+		45C2E21473797579CD954AB900476082 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		464B740AB050826B821A2697179B87E1 /* mysql_embed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_embed.h; path = OHMySQL/lib/include/mysql_embed.h; sourceTree = "<group>"; };
+		474F03FC0A66C67A46F2C92EB0F7708A /* WebSocketServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketServer.swift; path = Sources/Server/WebSocketServer.swift; sourceTree = "<group>"; };
+		47E963665951ED6EC8E41BDE2BDBA552 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		488A7D7FF2F1FA8EE050ABE5B636C73F /* NSObject+Mapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Mapping.h"; path = "OHMySQL/Categories/NSObject+Mapping.h"; sourceTree = "<group>"; };
+		49AAB8192F81D86E12A9CE274AECA939 /* Pods-视讼.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-视讼.debug.xcconfig"; sourceTree = "<group>"; };
+		49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4D1F7A754B02B79A459AF39D0B04C438 /* Security.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Security.swift; path = Sources/Security/Security.swift; sourceTree = "<group>"; };
+		4EF239B4C2D0D3ADBA5EDF6C234D6F65 /* my_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_alloc.h; path = OHMySQL/lib/include/my_alloc.h; sourceTree = "<group>"; };
+		4F21B7779D8CE670E22226D1A3D62BD4 /* my_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_config.h; path = OHMySQL/lib/include/my_config.h; sourceTree = "<group>"; };
+		4FB79889FA54C779FB273096900C777B /* OHMySQL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHMySQL-dummy.m"; sourceTree = "<group>"; };
+		51590D484CF0B738172FFEFF8A7EBE2A /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		52A7AB83241A0276A73A75928C6061D6 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		52E58D5878466DD3D7711FFAEAE6AF0C /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		5330646393E68A88F3341265EF02C51F /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		55B8D24A43974C8C34658FC6BBFB64C9 /* FSCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSCalendar-Info.plist"; sourceTree = "<group>"; };
+		596A0A73960B2AED5059C9240C673741 /* OHCharsetEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHCharsetEncoding.h; path = OHMySQL/Constants/OHCharsetEncoding.h; sourceTree = "<group>"; };
+		59AE151BEADC63C44B53483ABE8A6E51 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = FSCalendar/FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		5DDAC0348D889F8459B4BA908DA42833 /* OHMySQL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OHMySQL.modulemap; sourceTree = "<group>"; };
+		6162418C5AB53AB24866002A6B5E55ED /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		66553769A45C517F29F5698DD4EE970A /* my_dbug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_dbug.h; path = OHMySQL/lib/include/my_dbug.h; sourceTree = "<group>"; };
+		66D621A596BEA976537AFFA2E42852B0 /* my_dir.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_dir.h; path = OHMySQL/lib/include/my_dir.h; sourceTree = "<group>"; };
+		67494654D7F5D4E6FAD75D3670D52A09 /* OHCharsetEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHCharsetEncoding.m; path = OHMySQL/Constants/OHCharsetEncoding.m; sourceTree = "<group>"; };
+		6B1474C82A9EA5EB3FFE0C2670AD2FB1 /* mysql_lex_string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_lex_string.h; path = OHMySQL/lib/include/mysql/mysql_lex_string.h; sourceTree = "<group>"; };
+		6B501F32640F72BF943DA3F961038C2D /* Floaty-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Floaty-Info.plist"; sourceTree = "<group>"; };
+		6B53911FE35CEB86D6C8B02F7951B2B4 /* Framer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Framer.swift; path = Sources/Framer/Framer.swift; sourceTree = "<group>"; };
+		6DFAC0AC09F4F682430C400379B7E587 /* OHMySQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHMySQL.framework; path = OHMySQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E02592744702D443CEE34A02F9DE44B /* OHMySQLSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLSerialization.m; path = OHMySQL/OHMySQLSerialization.m; sourceTree = "<group>"; };
+		6E370E1AC41F98590752427A550E95E2 /* my_sys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_sys.h; path = OHMySQL/lib/include/my_sys.h; sourceTree = "<group>"; };
+		6F15C1D49D896D83E7B809237A391867 /* FoundationSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationSecurity.swift; path = Sources/Security/FoundationSecurity.swift; sourceTree = "<group>"; };
+		6F54E60F73954FD977346935DAE0A550 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		70551656A942C4E04704AC3D5626879F /* my_compiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_compiler.h; path = OHMySQL/lib/include/my_compiler.h; sourceTree = "<group>"; };
+		71DA2FED9E853DB28D2C500E67F44F03 /* StringHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringHTTPHandler.swift; path = Sources/Framer/StringHTTPHandler.swift; sourceTree = "<group>"; };
+		7237F5682B5529FD24719AA9F2D78061 /* OHMySQL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHMySQL-prefix.pch"; sourceTree = "<group>"; };
+		738462D1292C339382F2D36E94470FDE /* OHMySQLUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLUser.m; path = OHMySQL/Models/OHMySQLUser.m; sourceTree = "<group>"; };
+		747652C20551B7E55F50B61FD7AFB58B /* mysql_socket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_socket.h; path = OHMySQL/lib/include/mysql/psi/mysql_socket.h; sourceTree = "<group>"; };
+		7588E5CDA433ACB8450E3600CBF96B0B /* OHMappingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMappingProtocol.h; path = OHMySQL/OHMappingProtocol.h; sourceTree = "<group>"; };
+		77A6FBC18142A36B95C87846E0A4D521 /* NSObject+Mapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Mapping.m"; path = "OHMySQL/Categories/NSObject+Mapping.m"; sourceTree = "<group>"; };
+		77F646F896BE5FD808D9FDB730756275 /* my_byteorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_byteorder.h; path = OHMySQL/lib/include/my_byteorder.h; sourceTree = "<group>"; };
+		7B6EA26799403635E84D5500A31F6E02 /* TCPTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPTransport.swift; path = Sources/Transport/TCPTransport.swift; sourceTree = "<group>"; };
+		7DB7C59B0EE7B2A58E6373D191B40BD9 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		80FAFF5059EBC6085A837E4B72C8104B /* thr_mutex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thr_mutex.h; path = OHMySQL/lib/include/thr_mutex.h; sourceTree = "<group>"; };
+		82B2E8824F584C465B24C4B0E788C970 /* mysql_time.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_time.h; path = OHMySQL/lib/include/mysql_time.h; sourceTree = "<group>"; };
+		8333300D27573E17563EC7D28A5BB471 /* OHMySQLStoreCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLStoreCoordinator.m; path = OHMySQL/OHMySQLStoreCoordinator.m; sourceTree = "<group>"; };
+		837EA062A77CEDFDFD648E9B4228D9C2 /* FloatyWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyWindow.swift; path = Sources/FloatyWindow.swift; sourceTree = "<group>"; };
+		83F77D813DB8D84F6200F7D9B13F1691 /* sql_state.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sql_state.h; path = OHMySQL/lib/include/sql_state.h; sourceTree = "<group>"; };
+		8507B304134D1703782591C1115A2E05 /* OHMySQLQueryContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryContext.m; path = OHMySQL/OHMySQLQueryContext.m; sourceTree = "<group>"; };
+		852C46E7DBB37F6B093D2668F2E1E276 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		854BED4A4884B64588400F3C5F155ADB /* mysqld_ername.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysqld_ername.h; path = OHMySQL/lib/include/mysqld_ername.h; sourceTree = "<group>"; };
+		8652112A3BC2CC3EC0146B90FBFA7124 /* m_ctype.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_ctype.h; path = OHMySQL/lib/include/m_ctype.h; sourceTree = "<group>"; };
+		8661B6FFEFCB5E0475019BC77B648C4C /* Pods-视讼-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-视讼-umbrella.h"; sourceTree = "<group>"; };
+		8867FD73EF714E5774506E57F856996A /* Pods-视讼.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-视讼.release.xcconfig"; sourceTree = "<group>"; };
+		88F0F54F915E20DF028B067968C562DA /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		897EA00125E2CEC1B4A1C69541D95B40 /* OHMySQLQueryRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryRequest.h; path = OHMySQL/Models/OHMySQLQueryRequest.h; sourceTree = "<group>"; };
+		8B5A8740EA9727670E9C80272A6CFCB6 /* plugin_auth_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = plugin_auth_common.h; path = OHMySQL/lib/include/mysql/plugin_auth_common.h; sourceTree = "<group>"; };
+		8DFD0899F9FDBB7462054462AA0B0A3B /* FloatyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyViewController.swift; path = Sources/FloatyViewController.swift; sourceTree = "<group>"; };
+		8F1BE3380DFEBAE98E080A549C3D5507 /* decimal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = decimal.h; path = OHMySQL/lib/include/decimal.h; sourceTree = "<group>"; };
+		93773EFC2F68EDD162DF8EF29245B971 /* my_command.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_command.h; path = OHMySQL/lib/include/my_command.h; sourceTree = "<group>"; };
+		93E54A435669CB791484CDE6A056A82B /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		944647B427AE1673514A5F34C03DCB5E /* sql_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sql_common.h; path = OHMySQL/lib/include/sql_common.h; sourceTree = "<group>"; };
+		950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		966578AA955455E75FA6111E16A06BDC /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/Transport/Transport.swift; sourceTree = "<group>"; };
+		976FB63699EE7A9CF644795D60EC6B4A /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		9AB90ECE7677C6CEB2DFD66396A9CF14 /* OHMySQLQueryContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryContext.h; path = OHMySQL/OHMySQLQueryContext.h; sourceTree = "<group>"; };
+		9B1BD0DFAAC6918A9B111E03D18FB62F /* NSString+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Utility.h"; path = "OHMySQL/Categories/NSString+Utility.h"; sourceTree = "<group>"; };
+		9B54097D4F0129721ED9D68E7F1A69CF /* NSNumber+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+OHSerialization.h"; path = "OHMySQL/Categories/NSNumber+OHSerialization.h"; sourceTree = "<group>"; };
+		9B5701D92C728368E099D27311292D50 /* FrameCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCollector.swift; path = Sources/Framer/FrameCollector.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DB59A330DB1DFE93782B6FC03DC7BBD /* FloatyItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyItem.swift; path = Sources/FloatyItem.swift; sourceTree = "<group>"; };
+		9DC7A6665BCB41F05887E055235CD5FA /* NSData+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+OHSerialization.m"; path = "OHMySQL/Categories/NSData+OHSerialization.m"; sourceTree = "<group>"; };
+		9DFE8E9FCE9E584805258679E65A61F3 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		9E13B6C0346B21A9448803E9AFB8928F /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
+		9E8406289BB54AFD13EB4695C3DA57C1 /* OHMySQLStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLStore.m; path = OHMySQL/Models/OHMySQLStore.m; sourceTree = "<group>"; };
+		9EAD81A4EE3B1F2A35CAEECCBB197408 /* mysql_ps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_ps.h; path = OHMySQL/lib/include/mysql/psi/mysql_ps.h; sourceTree = "<group>"; };
+		9FA4F161A2AF2254BF11EE8506A0273B /* OHResultErrorType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHResultErrorType.h; path = OHMySQL/Constants/OHResultErrorType.h; sourceTree = "<group>"; };
+		A09FD60A9B454C6ECAA87AFF723ACCCE /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
+		A402AEF4A56BC34705B10538044E59B9 /* mysql_mdl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_mdl.h; path = OHMySQL/lib/include/mysql/psi/mysql_mdl.h; sourceTree = "<group>"; };
+		A72CD177A2025D299700BA9D0CA00AFD /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
+		A74C6901A3BC5B456148FFFC8E84B676 /* NSString+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+OHSerialization.h"; path = "OHMySQL/Categories/NSString+OHSerialization.h"; sourceTree = "<group>"; };
+		A8C6F92516E69439172BAF708AE10F0B /* OHMySQL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQL.h; path = OHMySQL/OHMySQL.h; sourceTree = "<group>"; };
+		A8E12C31DE4DCE661ADCABA1101068CF /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		A9F1BF222DCF6C66788BAD2FBCE02A83 /* errmsg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errmsg.h; path = OHMySQL/lib/include/errmsg.h; sourceTree = "<group>"; };
+		AA059AA1DA1FA94FAE3B257761AA86D7 /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Engine/Engine.swift; sourceTree = "<group>"; };
+		ADA5199DB3AF7805465A62D11EB0C2C7 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		AFD7E9DBE8A012C9871664FC9C891430 /* byte_order_generic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = byte_order_generic.h; path = OHMySQL/lib/include/byte_order_generic.h; sourceTree = "<group>"; };
+		B185F3DCE37E17F7C0D852BD2C73186B /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		B2A584B149A876D9398DB8B9C966BCDC /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		B45EC203CAC67B0A065345D2BC6B9F54 /* NSString+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utility.m"; path = "OHMySQL/Categories/NSString+Utility.m"; sourceTree = "<group>"; };
+		B46F6D3559A49E3D7272837994E41C75 /* WSEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEngine.swift; path = Sources/Engine/WSEngine.swift; sourceTree = "<group>"; };
+		B487B4CD885106D8B37E47B3DCB9958E /* Floaty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Floaty.modulemap; sourceTree = "<group>"; };
+		B5F7F1C3C55B4F1F060F76EC0623B84C /* psi_memory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = psi_memory.h; path = OHMySQL/lib/include/mysql/psi/psi_memory.h; sourceTree = "<group>"; };
+		B73B96FB766C5DED7235CF8F6B3B9B93 /* Pods___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods___.framework; path = "Pods-视讼.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B886A8D7EFCB34951F13D00E23F0C68E /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		BAC746175DAEBE040F0AC57DC71064D2 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		BB145E6421705F02CB75DC7952C1842D /* Pods-视讼.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-视讼.modulemap"; sourceTree = "<group>"; };
+		BBAD7FDB5064E0E82E192A4A61ED0993 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		C19AA3A19EF7A31F745088995DA8A459 /* OHMySQLTimeline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLTimeline.m; path = OHMySQL/Models/OHMySQLTimeline.m; sourceTree = "<group>"; };
+		C2EA6C4709BDB9A8C2356941617FCC9C /* mysql.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql.h; path = OHMySQL/lib/include/mysql.h; sourceTree = "<group>"; };
+		C3E80A82B402434BDFB18A0098F53325 /* mysql_idle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_idle.h; path = OHMySQL/lib/include/mysql/psi/mysql_idle.h; sourceTree = "<group>"; };
+		C430A897A99DCA1B66FF4213BC4E3EC2 /* Pods-视讼-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-视讼-Info.plist"; sourceTree = "<group>"; };
+		C5A5C2CBD2E1B8D031DD9DC0AFD9AE7B /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPServerHandler.swift; path = Sources/Framer/FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
+		C5EEBBF8C033C76A6519A810580DC73D /* OHMySQLTimeline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLTimeline.h; path = OHMySQL/Models/OHMySQLTimeline.h; sourceTree = "<group>"; };
+		C71AFD98F78FF90BD8F94838BC77E725 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/DataBytes/Data+Extensions.swift"; sourceTree = "<group>"; };
+		C7397740476371CBCA7B0901C942566D /* OHMySQLContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLContainer.m; path = OHMySQL/OHMySQLContainer.m; sourceTree = "<group>"; };
+		C7A21B9E4D43FA64873ABBE0DDD0E97B /* NSString+Escaping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Escaping.m"; path = "OHMySQL/Categories/NSString+Escaping.m"; sourceTree = "<group>"; };
+		C7B80576EF37B2BBCBD8DEAF2A49D9D9 /* FoundationTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Sources/Transport/FoundationTransport.swift; sourceTree = "<group>"; };
+		C99E29E8B0EE3A98D94CE7D14B985659 /* OHMySQLQueryRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryRequestFactory.m; path = OHMySQL/OHMySQLQueryRequestFactory.m; sourceTree = "<group>"; };
+		CA9D1076F818A9E43B7071FD8D03B8F1 /* Pods-视讼-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-视讼-dummy.m"; sourceTree = "<group>"; };
+		CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CCBC45E921EF60FB2FFBDA4D754C3E92 /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
+		CD6803F6A9FCDE45E30527FADE8CFB27 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		CDEBB248F53182F6471FC22A702159D9 /* Floaty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Floaty.release.xcconfig; sourceTree = "<group>"; };
+		CE3D988C2E75822C2A6CCF226B75D137 /* OHMySQLUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLUser.h; path = OHMySQL/Models/OHMySQLUser.h; sourceTree = "<group>"; };
+		D5771D43960EFC41CCF081321A7E56A0 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		D6C78120EA5337B5656ECAC48909F84F /* psi_base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = psi_base.h; path = OHMySQL/lib/include/mysql/psi/psi_base.h; sourceTree = "<group>"; };
+		D705C3B89A3721680E5051BC5C554859 /* OHMySQL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHMySQL.debug.xcconfig; sourceTree = "<group>"; };
+		DA17BBD5C0EB4C4F5804F3D0D536FFD1 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		DD1AE7627080E1994187FC609C2A54CC /* NSString+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+OHSerialization.m"; path = "OHMySQL/Categories/NSString+OHSerialization.m"; sourceTree = "<group>"; };
+		DDB232DB097628D05DD0149995551EED /* mysql_memory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_memory.h; path = OHMySQL/lib/include/mysql/psi/mysql_memory.h; sourceTree = "<group>"; };
+		DE2ED054BC4A25907B085C1CE4205FDB /* byte_order_generic_x86.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = byte_order_generic_x86.h; path = OHMySQL/lib/include/byte_order_generic_x86.h; sourceTree = "<group>"; };
+		E011C1A30D850DCBAA77AD2B6C5FF659 /* mysql_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_table.h; path = OHMySQL/lib/include/mysql/psi/mysql_table.h; sourceTree = "<group>"; };
+		E07A24361FFEB8CFBFC13FD815624742 /* big_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = big_endian.h; path = OHMySQL/lib/include/big_endian.h; sourceTree = "<group>"; };
+		E0B74BC2D18F2EB7DB57874CE2A1A10A /* little_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = little_endian.h; path = OHMySQL/lib/include/little_endian.h; sourceTree = "<group>"; };
+		E1AD36857FB2374E36C8DD04D83ECEEB /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		E60EDCEC42631E15DAA2EFF1845EB290 /* NSNumber+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+OHSerialization.m"; path = "OHMySQL/Categories/NSNumber+OHSerialization.m"; sourceTree = "<group>"; };
+		E632E6A4CAC67AC37CEA954E8F57D89A /* Floaty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Floaty.swift; path = Sources/Floaty.swift; sourceTree = "<group>"; };
+		E71E827B39BA517F15FDEFDDA227C565 /* get_password.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = get_password.h; path = OHMySQL/lib/include/mysql/get_password.h; sourceTree = "<group>"; };
+		E8B4019FFE19AAD88FE3BD24027DF68B /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		E9DAAD3D3602AFF315A6E42E58D3CC97 /* mysql_com.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_com.h; path = OHMySQL/lib/include/mysql_com.h; sourceTree = "<group>"; };
+		EA6E1A343CC85B55D6ECBCAD2B268BEF /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression/Compression.swift; sourceTree = "<group>"; };
+		EEE35D5AAB168E55FFDB903703599AE5 /* mysqld_error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysqld_error.h; path = OHMySQL/lib/include/mysqld_error.h; sourceTree = "<group>"; };
+		EFCAA91FF52E712725DBD70EA609018D /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		F11065693432EC3EDB60F3BB90B4F264 /* thr_cond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thr_cond.h; path = OHMySQL/lib/include/thr_cond.h; sourceTree = "<group>"; };
+		F16B7DA49FBABA743A6B7C8FCDF2BDD5 /* OHMySQL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHMySQL-umbrella.h"; sourceTree = "<group>"; };
+		F201F761543D6254DF2D3D790602B825 /* OHMySQL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHMySQL.release.xcconfig; sourceTree = "<group>"; };
+		F29CA2BA64ED10612BBE1BC72F82C0E4 /* NSData+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+OHSerialization.h"; path = "OHMySQL/Categories/NSData+OHSerialization.h"; sourceTree = "<group>"; };
+		F32518ED1B5616DA00BCCB646A7AC746 /* my_xml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_xml.h; path = OHMySQL/lib/include/my_xml.h; sourceTree = "<group>"; };
+		F3D70E6922A7DE69986603E25B9AC9FF /* my_global.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_global.h; path = OHMySQL/lib/include/my_global.h; sourceTree = "<group>"; };
+		F4BCFAB02A8694A2B88561CF27E55E66 /* FloatyDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyDelegate.swift; path = Sources/FloatyDelegate.swift; sourceTree = "<group>"; };
+		F518B435F22B43038FDB9B135E1D4C6C /* OHProtocolType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHProtocolType.h; path = OHMySQL/Constants/OHProtocolType.h; sourceTree = "<group>"; };
+		F5E6A08A39C9F4299F5B223F214938D8 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		F78B23DAD5BB5C293CD5E314DE6676C2 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		F8EEC110826F70DF3BD10E350BEFFA90 /* NSString+Escaping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Escaping.h"; path = "OHMySQL/Categories/NSString+Escaping.h"; sourceTree = "<group>"; };
+		F91612893DD75CA3DD21CE68E6011716 /* sslopt-longopts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "sslopt-longopts.h"; path = "OHMySQL/lib/include/sslopt-longopts.h"; sourceTree = "<group>"; };
+		FB316422453BA9DD5B8AF0AF8A62C9E9 /* OHMySQLStoreCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLStoreCoordinator.h; path = OHMySQL/OHMySQLStoreCoordinator.h; sourceTree = "<group>"; };
+		FCAAAD93DFCDB21CED1A29C6EA09B909 /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		FCDBC1D7D35A7980C54FEE77AC7339C9 /* service_mysql_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = service_mysql_alloc.h; path = OHMySQL/lib/include/mysql/service_mysql_alloc.h; sourceTree = "<group>"; };
+		FE78A720A6D45FEC17D840CA7E7480CA /* Floaty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-umbrella.h"; sourceTree = "<group>"; };
+		FF638D6AD7F760F8134C4D16E5F60591 /* psi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = psi.h; path = OHMySQL/lib/include/mysql/psi/psi.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0666A2B94C479F72B285A48708476A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E05EEB718FF3C5C736F0ED246F63981B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456E195AE8148B842C3DBA389C9DEB37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBE9A32B224306632C22144F156749B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCC188EBE5C479D0F07E724B622C03A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1572414BB57E1CAEB0839E30A33979C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC37F9F0AECBBB89E5889BD140C8128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EDC14699EE4C5EC8BF5EAF630EAA17D /* Foundation.framework in Frameworks */,
+				5D07F928A96206A23E9988E447DBC3C0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93B0F6F7A24587A13A4DC4628DF35C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF77236482AFFCE182ADD5A66C481578 /* Foundation.framework in Frameworks */,
+				019AC93D9A5A6CE4B3486198C1F96FF5 /* QuartzCore.framework in Frameworks */,
+				7B2C14BA8AF4E5981ED01458225D7AA3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C18BABFF9523A33465B5A91496FF0C3D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A5CF27877CAE028C18B1E8F14FEC648 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5771D43960EFC41CCF081321A7E56A0 /* FSCalendar.modulemap */,
+				BBAD7FDB5064E0E82E192A4A61ED0993 /* FSCalendar-dummy.m */,
+				55B8D24A43974C8C34658FC6BBFB64C9 /* FSCalendar-Info.plist */,
+				7DB7C59B0EE7B2A58E6373D191B40BD9 /* FSCalendar-prefix.pch */,
+				EFCAA91FF52E712725DBD70EA609018D /* FSCalendar-umbrella.h */,
+				446F0509B9F1FE2268E74C5F3D5F470C /* FSCalendar.debug.xcconfig */,
+				07F8F10918487FF1BA0E407644EB0F6D /* FSCalendar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSCalendar";
+			sourceTree = "<group>";
+		};
+		1CE67BD201C1922D2D053EB6DB2AA84B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B487B4CD885106D8B37E47B3DCB9958E /* Floaty.modulemap */,
+				241C5FE4DB8F6AEC1E10B99AFA1D23F9 /* Floaty-dummy.m */,
+				6B501F32640F72BF943DA3F961038C2D /* Floaty-Info.plist */,
+				2ADD2952AEE0E249357D56B6F67C420C /* Floaty-prefix.pch */,
+				FE78A720A6D45FEC17D840CA7E7480CA /* Floaty-umbrella.h */,
+				412D9D989B02EB366606A5D9F486A0E9 /* Floaty.debug.xcconfig */,
+				CDEBB248F53182F6471FC22A702159D9 /* Floaty.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Floaty";
+			sourceTree = "<group>";
+		};
+		2232FEC640C25EBD4DB8466EB1DB69BF /* Pods-视讼 */ = {
+			isa = PBXGroup;
+			children = (
+				BB145E6421705F02CB75DC7952C1842D /* Pods-视讼.modulemap */,
+				10982E41D37CBADF7CE9C922D0CBC8DE /* Pods-视讼-acknowledgements.markdown */,
+				0112C40B1D091E9D0D254B1E848542B2 /* Pods-视讼-acknowledgements.plist */,
+				CA9D1076F818A9E43B7071FD8D03B8F1 /* Pods-视讼-dummy.m */,
+				106F571D3ACF4183E54A3738FEE50462 /* Pods-视讼-frameworks.sh */,
+				C430A897A99DCA1B66FF4213BC4E3EC2 /* Pods-视讼-Info.plist */,
+				8661B6FFEFCB5E0475019BC77B648C4C /* Pods-视讼-umbrella.h */,
+				49AAB8192F81D86E12A9CE274AECA939 /* Pods-视讼.debug.xcconfig */,
+				8867FD73EF714E5774506E57F856996A /* Pods-视讼.release.xcconfig */,
+			);
+			name = "Pods-视讼";
+			path = "Target Support Files/Pods-视讼";
+			sourceTree = "<group>";
+		};
+		3436888A9BEDA049BB71ABC84D1D5A0B /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				93E54A435669CB791484CDE6A056A82B /* FSCalendar.h */,
+				274B1FED4ACB3F9E82A671ECE07B4EAD /* FSCalendar.m */,
+				F78B23DAD5BB5C293CD5E314DE6676C2 /* FSCalendarAppearance.h */,
+				289C0A417CBF4D8B44C54341056041A7 /* FSCalendarAppearance.m */,
+				B886A8D7EFCB34951F13D00E23F0C68E /* FSCalendarCalculator.h */,
+				275E09DB4D04D8A77FD880ABC22E01F0 /* FSCalendarCalculator.m */,
+				9E13B6C0346B21A9448803E9AFB8928F /* FSCalendarCell.h */,
+				FCAAAD93DFCDB21CED1A29C6EA09B909 /* FSCalendarCell.m */,
+				51590D484CF0B738172FFEFF8A7EBE2A /* FSCalendarCollectionView.h */,
+				02779AB18AD6B8A5F8EAE88B8DBDC73E /* FSCalendarCollectionView.m */,
+				6162418C5AB53AB24866002A6B5E55ED /* FSCalendarCollectionViewLayout.h */,
+				08EE3C300326D10906F074D6C6FB0DEC /* FSCalendarCollectionViewLayout.m */,
+				A09FD60A9B454C6ECAA87AFF723ACCCE /* FSCalendarConstants.h */,
+				B185F3DCE37E17F7C0D852BD2C73186B /* FSCalendarConstants.m */,
+				88F0F54F915E20DF028B067968C562DA /* FSCalendarDelegationFactory.h */,
+				47E963665951ED6EC8E41BDE2BDBA552 /* FSCalendarDelegationFactory.m */,
+				E1AD36857FB2374E36C8DD04D83ECEEB /* FSCalendarDelegationProxy.h */,
+				45C2E21473797579CD954AB900476082 /* FSCalendarDelegationProxy.m */,
+				52A7AB83241A0276A73A75928C6061D6 /* FSCalendarDynamicHeader.h */,
+				17D81D8946CDC638CF6C9192AE6DE80F /* FSCalendarExtensions.h */,
+				A8E12C31DE4DCE661ADCABA1101068CF /* FSCalendarExtensions.m */,
+				24644B6E9C030662425F5C1E88CEC0F3 /* FSCalendarHeaderView.h */,
+				34DAF49B2E1CE75B6A104585A554FC89 /* FSCalendarHeaderView.m */,
+				59AE151BEADC63C44B53483ABE8A6E51 /* FSCalendarSeparatorDecorationView.h */,
+				6F54E60F73954FD977346935DAE0A550 /* FSCalendarSeparatorDecorationView.m */,
+				E8B4019FFE19AAD88FE3BD24027DF68B /* FSCalendarStickyHeader.h */,
+				5330646393E68A88F3341265EF02C51F /* FSCalendarStickyHeader.m */,
+				852C46E7DBB37F6B093D2668F2E1E276 /* FSCalendarTransitionCoordinator.h */,
+				B2A584B149A876D9398DB8B9C966BCDC /* FSCalendarTransitionCoordinator.m */,
+				52E58D5878466DD3D7711FFAEAE6AF0C /* FSCalendarWeekdayView.h */,
+				CD6803F6A9FCDE45E30527FADE8CFB27 /* FSCalendarWeekdayView.m */,
+				1A5CF27877CAE028C18B1E8F14FEC648 /* Support Files */,
+			);
+			name = FSCalendar;
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		75141460EDC6EC4164544EA787236DD6 /* Floaty */ = {
+			isa = PBXGroup;
+			children = (
+				E632E6A4CAC67AC37CEA954E8F57D89A /* Floaty.swift */,
+				F4BCFAB02A8694A2B88561CF27E55E66 /* FloatyDelegate.swift */,
+				9DB59A330DB1DFE93782B6FC03DC7BBD /* FloatyItem.swift */,
+				3DCBC1FC431F19C6BE47F01D4A3F63BE /* FloatyManager.swift */,
+				8DFD0899F9FDBB7462054462AA0B0A3B /* FloatyViewController.swift */,
+				837EA062A77CEDFDFD648E9B4228D9C2 /* FloatyWindow.swift */,
+				067959C4192EFB79C026B2B443518211 /* UIView+Draggable.swift */,
+				1CE67BD201C1922D2D053EB6DB2AA84B /* Support Files */,
+			);
+			name = Floaty;
+			path = Floaty;
+			sourceTree = "<group>";
+		};
+		7E7827FE5E82E2AEB4EE01D2DD11CAC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2915C263A5C5C8012A8C1E97512DC6A8 /* Floaty.framework */,
+				95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */,
+				6DFAC0AC09F4F682430C400379B7E587 /* OHMySQL.framework */,
+				B73B96FB766C5DED7235CF8F6B3B9B93 /* Pods___.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B67CE5030ABB298AB22FA76AAE06A7C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DDAC0348D889F8459B4BA908DA42833 /* OHMySQL.modulemap */,
+				4FB79889FA54C779FB273096900C777B /* OHMySQL-dummy.m */,
+				01ADB5DB43FD314DD96E2E466B00A9AC /* OHMySQL-Info.plist */,
+				7237F5682B5529FD24719AA9F2D78061 /* OHMySQL-prefix.pch */,
+				F16B7DA49FBABA743A6B7C8FCDF2BDD5 /* OHMySQL-umbrella.h */,
+				D705C3B89A3721680E5051BC5C554859 /* OHMySQL.debug.xcconfig */,
+				F201F761543D6254DF2D3D790602B825 /* OHMySQL.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OHMySQL";
+			sourceTree = "<group>";
+		};
+		920831A293DBC2384CD865A7AEA6430B /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				EA6E1A343CC85B55D6ECBCAD2B268BEF /* Compression.swift */,
+				C71AFD98F78FF90BD8F94838BC77E725 /* Data+Extensions.swift */,
+				AA059AA1DA1FA94FAE3B257761AA86D7 /* Engine.swift */,
+				CCBC45E921EF60FB2FFBDA4D754C3E92 /* FoundationHTTPHandler.swift */,
+				C5A5C2CBD2E1B8D031DD9DC0AFD9AE7B /* FoundationHTTPServerHandler.swift */,
+				6F15C1D49D896D83E7B809237A391867 /* FoundationSecurity.swift */,
+				C7B80576EF37B2BBCBD8DEAF2A49D9D9 /* FoundationTransport.swift */,
+				9B5701D92C728368E099D27311292D50 /* FrameCollector.swift */,
+				6B53911FE35CEB86D6C8B02F7951B2B4 /* Framer.swift */,
+				0599C6F3AD9D85E7C3DC5F3D0B60EDE4 /* HTTPHandler.swift */,
+				A72CD177A2025D299700BA9D0CA00AFD /* NativeEngine.swift */,
+				4D1F7A754B02B79A459AF39D0B04C438 /* Security.swift */,
+				275A878B1C8A99A469E5ACBCBE2D1EE2 /* Server.swift */,
+				71DA2FED9E853DB28D2C500E67F44F03 /* StringHTTPHandler.swift */,
+				7B6EA26799403635E84D5500A31F6E02 /* TCPTransport.swift */,
+				966578AA955455E75FA6111E16A06BDC /* Transport.swift */,
+				BAC746175DAEBE040F0AC57DC71064D2 /* WebSocket.swift */,
+				474F03FC0A66C67A46F2C92EB0F7708A /* WebSocketServer.swift */,
+				453D270A7556502095F85D59EDCB363D /* WSCompression.swift */,
+				B46F6D3559A49E3D7272837994E41C75 /* WSEngine.swift */,
+				EFA72187C98E44DDFCF9084C9C32D764 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		A9AC6C497AAFDB4C408AE8EB59B2C5B9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2232FEC640C25EBD4DB8466EB1DB69BF /* Pods-视讼 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C18BABFF9523A33465B5A91496FF0C3D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */,
+				CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */,
+				49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C4AFAD7DF5B003B02106375C5A2911CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F32FF24E68E6510F0626C2CD55B5F44 /* libmysqlclient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBFF868C9F028823E50124F98F2DB57A /* OHMySQL */ = {
+			isa = PBXGroup;
+			children = (
+				E07A24361FFEB8CFBFC13FD815624742 /* big_endian.h */,
+				0BB9C64B5452C3BA44CD4B57000828B2 /* binary_log_types.h */,
+				AFD7E9DBE8A012C9871664FC9C891430 /* byte_order_generic.h */,
+				DE2ED054BC4A25907B085C1CE4205FDB /* byte_order_generic_x86.h */,
+				12EF12379E091DE4E349C09018B1B65B /* client_authentication.h */,
+				03E5386AF777E2F92FE4BD45D1E3321D /* client_plugin.h */,
+				8F1BE3380DFEBAE98E080A549C3D5507 /* decimal.h */,
+				A9F1BF222DCF6C66788BAD2FBCE02A83 /* errmsg.h */,
+				E71E827B39BA517F15FDEFDDA227C565 /* get_password.h */,
+				09E44F40EF62E42FC78E576A9FBAE6D9 /* keycache.h */,
+				E0B74BC2D18F2EB7DB57874CE2A1A10A /* little_endian.h */,
+				8652112A3BC2CC3EC0146B90FBFA7124 /* m_ctype.h */,
+				39DE7FA8F2E97C49B1903A1E38A3A32B /* m_string.h */,
+				4EF239B4C2D0D3ADBA5EDF6C234D6F65 /* my_alloc.h */,
+				77F646F896BE5FD808D9FDB730756275 /* my_byteorder.h */,
+				93773EFC2F68EDD162DF8EF29245B971 /* my_command.h */,
+				70551656A942C4E04704AC3D5626879F /* my_compiler.h */,
+				4F21B7779D8CE670E22226D1A3D62BD4 /* my_config.h */,
+				66553769A45C517F29F5698DD4EE970A /* my_dbug.h */,
+				66D621A596BEA976537AFFA2E42852B0 /* my_dir.h */,
+				0D70C5A9FCE128E15BDC73EE5F756C97 /* my_getopt.h */,
+				F3D70E6922A7DE69986603E25B9AC9FF /* my_global.h */,
+				254703A970D3C4BB6C0C33421CA64DDF /* my_list.h */,
+				6E370E1AC41F98590752427A550E95E2 /* my_sys.h */,
+				07B9E62837C2E35D5A413FDB82C46725 /* my_thread.h */,
+				24016537EB8E879CF1F46942B7A01E6A /* my_thread_local.h */,
+				F32518ED1B5616DA00BCCB646A7AC746 /* my_xml.h */,
+				C2EA6C4709BDB9A8C2356941617FCC9C /* mysql.h */,
+				E9DAAD3D3602AFF315A6E42E58D3CC97 /* mysql_com.h */,
+				1ACB220B94E32BE883E45BF22273B190 /* mysql_com_server.h */,
+				464B740AB050826B821A2697179B87E1 /* mysql_embed.h */,
+				216E75E8E24018CFD561F13E229BB90C /* mysql_file.h */,
+				C3E80A82B402434BDFB18A0098F53325 /* mysql_idle.h */,
+				6B1474C82A9EA5EB3FFE0C2670AD2FB1 /* mysql_lex_string.h */,
+				A402AEF4A56BC34705B10538044E59B9 /* mysql_mdl.h */,
+				DDB232DB097628D05DD0149995551EED /* mysql_memory.h */,
+				9EAD81A4EE3B1F2A35CAEECCBB197408 /* mysql_ps.h */,
+				747652C20551B7E55F50B61FD7AFB58B /* mysql_socket.h */,
+				3098182AFA0DA92925CD4F87F8C6A711 /* mysql_sp.h */,
+				438CCD74AC17080DF966A97720C17A6E /* mysql_stage.h */,
+				11590593AACA7794FE6842058BB0CCA7 /* mysql_statement.h */,
+				E011C1A30D850DCBAA77AD2B6C5FF659 /* mysql_table.h */,
+				2D7BFF82666A137B7E8C1925FFACA3DA /* mysql_thread.h */,
+				82B2E8824F584C465B24C4B0E788C970 /* mysql_time.h */,
+				07EC854C05461CACA1CE2235B75CBC62 /* mysql_transaction.h */,
+				21E7AECB299FFAB6D99DCBB5DEF90F66 /* mysql_version.h */,
+				854BED4A4884B64588400F3C5F155ADB /* mysqld_ername.h */,
+				EEE35D5AAB168E55FFDB903703599AE5 /* mysqld_error.h */,
+				F29CA2BA64ED10612BBE1BC72F82C0E4 /* NSData+OHSerialization.h */,
+				9DC7A6665BCB41F05887E055235CD5FA /* NSData+OHSerialization.m */,
+				9B54097D4F0129721ED9D68E7F1A69CF /* NSNumber+OHSerialization.h */,
+				E60EDCEC42631E15DAA2EFF1845EB290 /* NSNumber+OHSerialization.m */,
+				488A7D7FF2F1FA8EE050ABE5B636C73F /* NSObject+Mapping.h */,
+				77A6FBC18142A36B95C87846E0A4D521 /* NSObject+Mapping.m */,
+				F8EEC110826F70DF3BD10E350BEFFA90 /* NSString+Escaping.h */,
+				C7A21B9E4D43FA64873ABBE0DDD0E97B /* NSString+Escaping.m */,
+				A74C6901A3BC5B456148FFFC8E84B676 /* NSString+OHSerialization.h */,
+				DD1AE7627080E1994187FC609C2A54CC /* NSString+OHSerialization.m */,
+				9B1BD0DFAAC6918A9B111E03D18FB62F /* NSString+Utility.h */,
+				B45EC203CAC67B0A065345D2BC6B9F54 /* NSString+Utility.m */,
+				596A0A73960B2AED5059C9240C673741 /* OHCharsetEncoding.h */,
+				67494654D7F5D4E6FAD75D3670D52A09 /* OHCharsetEncoding.m */,
+				3D79274C89C85198E0A9768EF4FA4278 /* OHConstants.h */,
+				33502662968B69AF139A184748F14FD7 /* OHJoinConstants.h */,
+				4149A29C7BA939444787D25EDDC50726 /* OHJoinConstants.m */,
+				2931DB955A0FBFBB489E0207157369D1 /* OHLogging.h */,
+				7588E5CDA433ACB8450E3600CBF96B0B /* OHMappingProtocol.h */,
+				A8C6F92516E69439172BAF708AE10F0B /* OHMySQL.h */,
+				2EBE9C4356A83C1D35070CA0373530D1 /* OHMySQLContainer.h */,
+				C7397740476371CBCA7B0901C942566D /* OHMySQLContainer.m */,
+				9AB90ECE7677C6CEB2DFD66396A9CF14 /* OHMySQLQueryContext.h */,
+				8507B304134D1703782591C1115A2E05 /* OHMySQLQueryContext.m */,
+				897EA00125E2CEC1B4A1C69541D95B40 /* OHMySQLQueryRequest.h */,
+				38B02918470B96E94402CC3FC350E427 /* OHMySQLQueryRequest.m */,
+				403FAF8B2AAA7BC0AE38E7840AB2F26E /* OHMySQLQueryRequestFactory.h */,
+				C99E29E8B0EE3A98D94CE7D14B985659 /* OHMySQLQueryRequestFactory.m */,
+				2C2E20C09D4830B90108F609577AFBFD /* OHMySQLSerialization.h */,
+				6E02592744702D443CEE34A02F9DE44B /* OHMySQLSerialization.m */,
+				3CBF6DE5C8B1A2A44E5D7BFF03DD1A4A /* OHMySQLStore.h */,
+				9E8406289BB54AFD13EB4695C3DA57C1 /* OHMySQLStore.m */,
+				FB316422453BA9DD5B8AF0AF8A62C9E9 /* OHMySQLStoreCoordinator.h */,
+				8333300D27573E17563EC7D28A5BB471 /* OHMySQLStoreCoordinator.m */,
+				C5EEBBF8C033C76A6519A810580DC73D /* OHMySQLTimeline.h */,
+				C19AA3A19EF7A31F745088995DA8A459 /* OHMySQLTimeline.m */,
+				CE3D988C2E75822C2A6CCF226B75D137 /* OHMySQLUser.h */,
+				738462D1292C339382F2D36E94470FDE /* OHMySQLUser.m */,
+				F518B435F22B43038FDB9B135E1D4C6C /* OHProtocolType.h */,
+				38D4A5E90FCD8BE7C9E6AF5DE67ECB73 /* OHRefreshOptions.h */,
+				9FA4F161A2AF2254BF11EE8506A0273B /* OHResultErrorType.h */,
+				3B106EDC45815FF1D9B0A0C4051F0AB5 /* OHSerializationProtocol.h */,
+				01B18638A8C5672CD8B81EA066626B49 /* OHSSLConfig.h */,
+				29ED9304763D882C19536D438460DA61 /* OHSSLConfig.m */,
+				8B5A8740EA9727670E9C80272A6CFCB6 /* plugin_auth_common.h */,
+				1530ADFBC86C8BB232522AA47ED6D386 /* plugin_trace.h */,
+				FF638D6AD7F760F8134C4D16E5F60591 /* psi.h */,
+				D6C78120EA5337B5656ECAC48909F84F /* psi_base.h */,
+				B5F7F1C3C55B4F1F060F76EC0623B84C /* psi_memory.h */,
+				16F44A2C3481A7D31BE0EF68C40309AB /* service_my_snprintf.h */,
+				FCDBC1D7D35A7980C54FEE77AC7339C9 /* service_mysql_alloc.h */,
+				944647B427AE1673514A5F34C03DCB5E /* sql_common.h */,
+				83F77D813DB8D84F6200F7D9B13F1691 /* sql_state.h */,
+				1EE53BF4DFC586695852DE3072FA4867 /* sslopt-case.h */,
+				F91612893DD75CA3DD21CE68E6011716 /* sslopt-longopts.h */,
+				09C60C58F3B7955034B9137827E1B1C0 /* sslopt-vars.h */,
+				F11065693432EC3EDB60F3BB90B4F264 /* thr_cond.h */,
+				80FAFF5059EBC6085A837E4B72C8104B /* thr_mutex.h */,
+				1DAC223ABDA094192E28CB927245CF88 /* thr_rwlock.h */,
+				222D1ABF8886AE8F9E2861CA004BFE57 /* typelib.h */,
+				C4AFAD7DF5B003B02106375C5A2911CA /* Frameworks */,
+				8B67CE5030ABB298AB22FA76AAE06A7C /* Support Files */,
+			);
+			name = OHMySQL;
+			path = OHMySQL;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				EAF16491BD5F9EA4D2DFBCD4716FD7ED /* Pods */,
+				7E7827FE5E82E2AEB4EE01D2DD11CAC2 /* Products */,
+				A9AC6C497AAFDB4C408AE8EB59B2C5B9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EAF16491BD5F9EA4D2DFBCD4716FD7ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75141460EDC6EC4164544EA787236DD6 /* Floaty */,
+				3436888A9BEDA049BB71ABC84D1D5A0B /* FSCalendar */,
+				CBFF868C9F028823E50124F98F2DB57A /* OHMySQL */,
+				920831A293DBC2384CD865A7AEA6430B /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFA72187C98E44DDFCF9084C9C32D764 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B2184827C938C299866787BE7B9F641 /* Starscream.modulemap */,
+				F5E6A08A39C9F4299F5B223F214938D8 /* Starscream-dummy.m */,
+				ADA5199DB3AF7805465A62D11EB0C2C7 /* Starscream-Info.plist */,
+				13D2BEF117CCBE5F83EAB5E1A5DF8F89 /* Starscream-prefix.pch */,
+				9DFE8E9FCE9E584805258679E65A61F3 /* Starscream-umbrella.h */,
+				976FB63699EE7A9CF644795D60EC6B4A /* Starscream.debug.xcconfig */,
+				DA17BBD5C0EB4C4F5804F3D0D536FFD1 /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		562D2BD72D35656488FDAE48EA8DD7FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A717D8899A5BF391791350A2D112BBDA /* big_endian.h in Headers */,
+				A450283DCF941BBFA52EDAC5289A8BEA /* binary_log_types.h in Headers */,
+				4F532C4DBE75E0119B58A6E1D4DC9DCB /* byte_order_generic.h in Headers */,
+				8675BDAD0197AD032F88EE838C8C66EE /* byte_order_generic_x86.h in Headers */,
+				6501315DE26BE0FFE3210E0C493E7760 /* client_authentication.h in Headers */,
+				36CE097170B5FAD356597AC65FEE30C0 /* client_plugin.h in Headers */,
+				06AEDF225D90D7D86A86F20CD3423331 /* decimal.h in Headers */,
+				92A7B27AE36742717A18891C4C3C68D6 /* errmsg.h in Headers */,
+				362E5F33E31735145DDA774DED3C1F74 /* get_password.h in Headers */,
+				E2569E6D4DF391CF87319A3D3F33C4E7 /* keycache.h in Headers */,
+				E69A9B7350642E1BB97623E925F7566B /* little_endian.h in Headers */,
+				496460DCABF803C189AD212338717190 /* m_ctype.h in Headers */,
+				495FC41C10FFC231BD1212D5AD1D4F95 /* m_string.h in Headers */,
+				941D144549F3EB278F2B41B3A969F80A /* my_alloc.h in Headers */,
+				FF026C7E0CF8A511BE11FB8A33C26B05 /* my_byteorder.h in Headers */,
+				AF0763B08539B0F79D8254AFA66A375E /* my_command.h in Headers */,
+				A21325A740B869886C08C30D2B10A56D /* my_compiler.h in Headers */,
+				96AD7FC2E1320077AD4723B0B03C6E22 /* my_config.h in Headers */,
+				909EF5A73EB9DBC79B385B787B1D83AA /* my_dbug.h in Headers */,
+				96866903CBB09630043FA958D95F86B0 /* my_dir.h in Headers */,
+				D65C5A2E8CEFAA28F4C90697A8931815 /* my_getopt.h in Headers */,
+				B9F3FAEB3137EE8A5E3F47C14C5F2F03 /* my_global.h in Headers */,
+				AA34927E30C53FD4F6F20CB467B5196B /* my_list.h in Headers */,
+				6005CDF3DD1030EBA80EE7D44EB80300 /* my_sys.h in Headers */,
+				FCB39E37B3A2B6862D481A5D53EDBCF5 /* my_thread.h in Headers */,
+				21CD2879B82C5215F398A724067A31F8 /* my_thread_local.h in Headers */,
+				D6225EC558EF8AE0E631D81341BAB795 /* my_xml.h in Headers */,
+				42FFD2F6656561EEC98F07FCDFEE3F32 /* mysql.h in Headers */,
+				45F2AEBA571A3FD5DE4419782E96972A /* mysql_com.h in Headers */,
+				95A9A07CB261E740146CF83F12FE2B94 /* mysql_com_server.h in Headers */,
+				6EE7F42B88F981956ED6EA24FE060AEF /* mysql_embed.h in Headers */,
+				2F91ECF30B336F8F25CB49D70CE0CF3E /* mysql_file.h in Headers */,
+				E07DEB6A81DC36C70FC97B580DA75406 /* mysql_idle.h in Headers */,
+				FA826300A36F34935F5DFA7C64920E6F /* mysql_lex_string.h in Headers */,
+				D63D7927B07FD99B4107E40871BF7592 /* mysql_mdl.h in Headers */,
+				4EA06FC9044511C55BCB5B4AE03982F1 /* mysql_memory.h in Headers */,
+				1AA8F91974CADB6F7962D02885A3D2A0 /* mysql_ps.h in Headers */,
+				FE7F13AD197EB5085A656131A7BD5C1E /* mysql_socket.h in Headers */,
+				15C3AE52D766B5A05D8B82C5F4EA80E2 /* mysql_sp.h in Headers */,
+				A1D0FC543770F1939FCAF6D2620281E4 /* mysql_stage.h in Headers */,
+				7449001AB0C0DD1AB981F46B887F332C /* mysql_statement.h in Headers */,
+				7CB15D5F4D2BEC59747D59E267DAEBBF /* mysql_table.h in Headers */,
+				067C3F1528684D11245ADDCF3746D988 /* mysql_thread.h in Headers */,
+				85B27EB436ACCFA2565BAF454490766F /* mysql_time.h in Headers */,
+				9F91E255691737ECD97D6469EC50B045 /* mysql_transaction.h in Headers */,
+				88C2DE224152FB302F50105ECFBB0492 /* mysql_version.h in Headers */,
+				ED83345166E10D1FB2880AB6737F7172 /* mysqld_ername.h in Headers */,
+				B21589129660B7C8890B375401DDFE97 /* mysqld_error.h in Headers */,
+				C2FDC1E6EF1C09CBEF582876CB00A48C /* NSData+OHSerialization.h in Headers */,
+				62DF8AA810BE9CDCE93917794EAA29AF /* NSNumber+OHSerialization.h in Headers */,
+				FC65871FBF3039E32226D139E8597FD1 /* NSObject+Mapping.h in Headers */,
+				7DEF75CA2D2D0AB2FECA501A0EEB5D5A /* NSString+Escaping.h in Headers */,
+				3ECFF69A071F49B6C6CC70DACFF74387 /* NSString+OHSerialization.h in Headers */,
+				EE8114861B9841FABEF2DF07C40CEEE9 /* NSString+Utility.h in Headers */,
+				93C4FD03E6AAC5AEFE31EC4845117BF8 /* OHCharsetEncoding.h in Headers */,
+				0CD6F85F531988628B04B3651F2D59BF /* OHConstants.h in Headers */,
+				19120B5379BEC10E17A15ADF422FAC8F /* OHJoinConstants.h in Headers */,
+				BC5094802548BD1CF692756707D0D8E9 /* OHLogging.h in Headers */,
+				E34B6BDCC3453809981421E46A89B460 /* OHMappingProtocol.h in Headers */,
+				DB860D98F5F1523CE71B49D880B330A0 /* OHMySQL-umbrella.h in Headers */,
+				F86D9BFA86B8FB0BCF87E1A844863732 /* OHMySQL.h in Headers */,
+				C879BE0E77FE64A016D4EE841702577B /* OHMySQLContainer.h in Headers */,
+				4621A95DB7D9B3A07C0DB6FAEC68F138 /* OHMySQLQueryContext.h in Headers */,
+				4F71301967F8B9B40B1E2AFB99111D5A /* OHMySQLQueryRequest.h in Headers */,
+				9667C4192F7DE794CC15F20721F52F39 /* OHMySQLQueryRequestFactory.h in Headers */,
+				FB0D64E1CBAA1D9E596C0578BAEBE8BC /* OHMySQLSerialization.h in Headers */,
+				A1F2E1A33C4F95073E5F68F888849F17 /* OHMySQLStore.h in Headers */,
+				94DED50B7E51FF3FBDE88B1CB9059FDD /* OHMySQLStoreCoordinator.h in Headers */,
+				AECB71D69657219B919D2943CD19245B /* OHMySQLTimeline.h in Headers */,
+				2F2D5E89B3604AF7AFD47D3036023310 /* OHMySQLUser.h in Headers */,
+				79DD94D0E8AAEADF703ABA58D0DF73F6 /* OHProtocolType.h in Headers */,
+				54B59DC5B10F82C09A5153A2DF5EF843 /* OHRefreshOptions.h in Headers */,
+				EA35B998B0F4F37A7452CFDED85839FF /* OHResultErrorType.h in Headers */,
+				97C5AE9E4ECA09A175D50BF5E758FB61 /* OHSerializationProtocol.h in Headers */,
+				AF96C5E4BBC8800EA0E1AB3B1E9F31D4 /* OHSSLConfig.h in Headers */,
+				2F260267453AF91B84F10232BEE61218 /* plugin_auth_common.h in Headers */,
+				01B546CFC7BC0F687D40B7246064ED9D /* plugin_trace.h in Headers */,
+				AD8FAFF23D4F2F165F00391687A6315D /* psi.h in Headers */,
+				8481AF61ECD90E46926ECF0F09D95451 /* psi_base.h in Headers */,
+				5E93D248D94CB5A0CC429D72B88E2985 /* psi_memory.h in Headers */,
+				7A35B9506FE72538A9F9C64CBEEEEB25 /* service_my_snprintf.h in Headers */,
+				7BD6F1A7BAFAF1259018A256AD049B09 /* service_mysql_alloc.h in Headers */,
+				3511025E13FBE6997741DD69BFB8CF21 /* sql_common.h in Headers */,
+				113246517365BC6B53B8CD3DF63C7BCB /* sql_state.h in Headers */,
+				40266BF5FDD5DC1BBF1C9AC152EF8D1B /* sslopt-case.h in Headers */,
+				DB7515AD538361B0A6E6368A155CB563 /* sslopt-longopts.h in Headers */,
+				31B3A74CC60939CBA6C119E8C83444A9 /* sslopt-vars.h in Headers */,
+				664237F44F9A9ECE3394D4089CC939A3 /* thr_cond.h in Headers */,
+				BBBF060F6CC86237D93587F874376853 /* thr_mutex.h in Headers */,
+				D41FFE4174591E2EAEA0D9FF1E96AD5D /* thr_rwlock.h in Headers */,
+				30843F8E73689D16CE4F72F38761B5A9 /* typelib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7EE8E920933BEA8DD4B568A79C2E38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A9419A891FAD6FB96254769106A220 /* Pods-视讼-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FBCA80FAEACC5AC57CFF6DC4ED4EB1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CC2D5DC15DBA9F5A494E76FF940B62 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D3C84D467248C1E3504D76A0DB6B50F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF844187199745A1DECB644BD844941 /* Floaty-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61A031D87FA293F87D12AFEEAD385CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AB76EF4157ADE0806FA3B4A1549EAD2 /* FSCalendar-umbrella.h in Headers */,
+				0EDCAFA93DA0E7D98A2CF2386FEAA550 /* FSCalendar.h in Headers */,
+				58AD6758D9237AFCBAE75CF5AA275C47 /* FSCalendarAppearance.h in Headers */,
+				4B06E7A9994CCDB40333001E83F1FD79 /* FSCalendarCalculator.h in Headers */,
+				C476BDEFC2C6E6CC23C0613BC70FC1B3 /* FSCalendarCell.h in Headers */,
+				DEA8746B8ACC9D6CE9EBDEA8F8CB2E27 /* FSCalendarCollectionView.h in Headers */,
+				52565719316CADB05B7C8FA79964519A /* FSCalendarCollectionViewLayout.h in Headers */,
+				6CF04FDA8240D858280268329C2674E9 /* FSCalendarConstants.h in Headers */,
+				1ED6A018A50C929244C03FC6A46670F8 /* FSCalendarDelegationFactory.h in Headers */,
+				0C880D762097C192F231E5560AF4EE29 /* FSCalendarDelegationProxy.h in Headers */,
+				919B72E0CE7743838A947288D10AAEA3 /* FSCalendarDynamicHeader.h in Headers */,
+				0E4A225B2E9192B1B7C8DFB85B4303AF /* FSCalendarExtensions.h in Headers */,
+				BADEDF3F5C6B8ECA687B3061C65C7E5D /* FSCalendarHeaderView.h in Headers */,
+				C3C830DA8E913ECBCF786ECB939918B2 /* FSCalendarSeparatorDecorationView.h in Headers */,
+				0673F3481EF6165F70E8F0990278BDC7 /* FSCalendarStickyHeader.h in Headers */,
+				4B11C48CCA7FD866A774B0E49FB595DA /* FSCalendarTransitionCoordinator.h in Headers */,
+				91A96B98AD78AAD881AB6389B1368405 /* FSCalendarWeekdayView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1747C1FC0D7AED6F717CE32ACF418CF5 /* Build configuration list for PBXNativeTarget "FSCalendar" */;
+			buildPhases = (
+				A61A031D87FA293F87D12AFEEAD385CC /* Headers */,
+				7CA9E2A18C014A20CD8A14FD9AFD84EB /* Sources */,
+				B93B0F6F7A24587A13A4DC4628DF35C0 /* Frameworks */,
+				F55CA98E8C93B232101DADF83D8625F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSCalendar;
+			productName = FSCalendar;
+			productReference = 95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4EEA4ACC5457AC54631AB29AC5838DDB /* Pods-视讼 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0C079C3D5378AD3D9E802C04B4A3A16 /* Build configuration list for PBXNativeTarget "Pods-视讼" */;
+			buildPhases = (
+				6D7EE8E920933BEA8DD4B568A79C2E38 /* Headers */,
+				7111ABE6B516C2BF3EDAA049F8D68DCC /* Sources */,
+				456E195AE8148B842C3DBA389C9DEB37 /* Frameworks */,
+				0C656006A6E43789C24D1DEDFBBE00DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CD49B5C6D5090C00698CFE2521D76C4 /* PBXTargetDependency */,
+				7CE39814DD5510858494F1CB5D4C2E7F /* PBXTargetDependency */,
+				0ED21F881A0CCADDC118738E0854E7ED /* PBXTargetDependency */,
+				91363F336CBAB7ECE6902318E8B13628 /* PBXTargetDependency */,
+			);
+			name = "Pods-视讼";
+			productName = "Pods-视讼";
+			productReference = B73B96FB766C5DED7235CF8F6B3B9B93 /* Pods___.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		523C0639A1C4C93383B4DF83058D0094 /* OHMySQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A417AD38F226C42CC2B519532004DD4 /* Build configuration list for PBXNativeTarget "OHMySQL" */;
+			buildPhases = (
+				562D2BD72D35656488FDAE48EA8DD7FF /* Headers */,
+				6FDE1BB7A11D06A4CFB570AF38B3A513 /* Sources */,
+				0666A2B94C479F72B285A48708476A4F /* Frameworks */,
+				E6788116B79DDAB3A55A2F25D3BD7551 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OHMySQL;
+			productName = OHMySQL;
+			productReference = 6DFAC0AC09F4F682430C400379B7E587 /* OHMySQL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559ECA96064FF8D4E520C661A9B10569 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				8FBCA80FAEACC5AC57CFF6DC4ED4EB1C /* Headers */,
+				E7E251548CC3ABEE63D68F3918C56EC9 /* Sources */,
+				4CCC188EBE5C479D0F07E724B622C03A /* Frameworks */,
+				5724CA8FBD0D73F2A54ABBE5AA5241A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2A775A88EA787684F2905BCB73F96D1 /* Floaty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9035F66F6B321C164BAAA98C62060831 /* Build configuration list for PBXNativeTarget "Floaty" */;
+			buildPhases = (
+				9D3C84D467248C1E3504D76A0DB6B50F /* Headers */,
+				85E563CDDA92B3A286725E86808E42B7 /* Sources */,
+				ABC37F9F0AECBBB89E5889BD140C8128 /* Frameworks */,
+				BBC138CB7B5E9B7C7EC2FBDBF14E1373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Floaty;
+			productName = Floaty;
+			productReference = 2915C263A5C5C8012A8C1E97512DC6A8 /* Floaty.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7E7827FE5E82E2AEB4EE01D2DD11CAC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2A775A88EA787684F2905BCB73F96D1 /* Floaty */,
+				13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */,
+				523C0639A1C4C93383B4DF83058D0094 /* OHMySQL */,
+				4EEA4ACC5457AC54631AB29AC5838DDB /* Pods-视讼 */,
+				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C656006A6E43789C24D1DEDFBBE00DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5724CA8FBD0D73F2A54ABBE5AA5241A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC138CB7B5E9B7C7EC2FBDBF14E1373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6788116B79DDAB3A55A2F25D3BD7551 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55CA98E8C93B232101DADF83D8625F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FDE1BB7A11D06A4CFB570AF38B3A513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BEA23FE665466355D08297629B27D7 /* NSData+OHSerialization.m in Sources */,
+				A1EC7268E2EDB70A2EC3203ED0420FD5 /* NSNumber+OHSerialization.m in Sources */,
+				4DD6DCEF8081B06AC9A8160FAB4363A8 /* NSObject+Mapping.m in Sources */,
+				3A05325C0022BEFF6AFE524CBF418272 /* NSString+Escaping.m in Sources */,
+				F0DA3829BFBD59317C506BC4DBFC563C /* NSString+OHSerialization.m in Sources */,
+				CEC2E9DC76531DD6C836287D7EAE488E /* NSString+Utility.m in Sources */,
+				9884328FF17DECDF26FAA84158AF92A0 /* OHCharsetEncoding.m in Sources */,
+				DA297D9EC5FA455E855BE384C92CAFEC /* OHJoinConstants.m in Sources */,
+				AA33945BE95139CF43C2BB17A00AC357 /* OHMySQL-dummy.m in Sources */,
+				EAC6C3A94BC9FEE0EC094607566969E1 /* OHMySQLContainer.m in Sources */,
+				1F9A87C9073DC8D74B5675A044C4BEC5 /* OHMySQLQueryContext.m in Sources */,
+				E4105D1358A1CC04806C4453F28F221C /* OHMySQLQueryRequest.m in Sources */,
+				3F7ECF1B43161B03BEB8AC1A7265D1AB /* OHMySQLQueryRequestFactory.m in Sources */,
+				68AC7600925DE220AAEBA3BBA81FE701 /* OHMySQLSerialization.m in Sources */,
+				885D59F337F85839B55F5BDAFE9C81AC /* OHMySQLStore.m in Sources */,
+				A68FA9D283C2FD2D8483F693E2A176D1 /* OHMySQLStoreCoordinator.m in Sources */,
+				F982A946B829D4AF9AF852D68FDC3A8A /* OHMySQLTimeline.m in Sources */,
+				46114BE42ACC2D40EB22AEE93F28923A /* OHMySQLUser.m in Sources */,
+				D61B5860091F90188A125D942FEB7906 /* OHSSLConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7111ABE6B516C2BF3EDAA049F8D68DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01AA629EDA2A5BB1728F4EA2AB5ECA5C /* Pods-视讼-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA9E2A18C014A20CD8A14FD9AFD84EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2126BAE2A3A69461E8B00562CFF6D67C /* FSCalendar-dummy.m in Sources */,
+				7EAEA451E04E5E96AFE6D1B63313F624 /* FSCalendar.m in Sources */,
+				8633C154CEC62F5ECAE687CC7ED8067E /* FSCalendarAppearance.m in Sources */,
+				FDB26845AA353936661B049BA64ABD25 /* FSCalendarCalculator.m in Sources */,
+				4C79C31591A80E7209E52F0928F7546C /* FSCalendarCell.m in Sources */,
+				E56AE3ED48D8E87D1CD9718291E0B5E5 /* FSCalendarCollectionView.m in Sources */,
+				487467099AB8229395A1A005DC6AD4F4 /* FSCalendarCollectionViewLayout.m in Sources */,
+				2E5EC07CFD18A132E57569D00117C703 /* FSCalendarConstants.m in Sources */,
+				083B18F49C35728E9A7B828E73DF2EB8 /* FSCalendarDelegationFactory.m in Sources */,
+				48DC50A48CEC3AEC56CB6C3144EF4D47 /* FSCalendarDelegationProxy.m in Sources */,
+				1BDE0FED974714A835CB89AD1062FF0D /* FSCalendarExtensions.m in Sources */,
+				FFF8E80B6D3629DB84D475C728EFCA1D /* FSCalendarHeaderView.m in Sources */,
+				0F2DEB38F550FF5F643CD48BE324B009 /* FSCalendarSeparatorDecorationView.m in Sources */,
+				1E0C257A13260508F9FC03D637764614 /* FSCalendarStickyHeader.m in Sources */,
+				D192D52340F6B27DA840BE2FA9F49EE9 /* FSCalendarTransitionCoordinator.m in Sources */,
+				3F0F6CEFD0801BEA64D1A265AE92FC05 /* FSCalendarWeekdayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E563CDDA92B3A286725E86808E42B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39CC38779B3593A7C5A067041E789B5D /* Floaty-dummy.m in Sources */,
+				8E81DCC864B08EADB6405EE39DD225A8 /* Floaty.swift in Sources */,
+				AF49D749CAE965784D16E579C94EACB1 /* FloatyDelegate.swift in Sources */,
+				C404585543BB15A332A69776F7F5B71C /* FloatyItem.swift in Sources */,
+				F23A86404C2D998825C8A071885323B7 /* FloatyManager.swift in Sources */,
+				6A2F136CC06B047188F944FE881C48CE /* FloatyViewController.swift in Sources */,
+				8C40574E60CBD4DD5A0DE79C5D3F39D3 /* FloatyWindow.swift in Sources */,
+				1FE2D19EF790109C3C32CEBBD18D4984 /* UIView+Draggable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7E251548CC3ABEE63D68F3918C56EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07413B05F2A3CD997EBCE9D8EE5FD08 /* Compression.swift in Sources */,
+				37E36C07C168E5737FBA757736AB1263 /* Data+Extensions.swift in Sources */,
+				0A0E8476402B53B091B91A7DE07E0008 /* Engine.swift in Sources */,
+				DA25193E27ABCAC731A9549A566C5FDB /* FoundationHTTPHandler.swift in Sources */,
+				190BC16FCBB53F6C6F2C0618B6BE7DDA /* FoundationHTTPServerHandler.swift in Sources */,
+				946911E4FFC48BF8F84D076D258A1322 /* FoundationSecurity.swift in Sources */,
+				19E712862F3F845060EA7DADEAD9BC59 /* FoundationTransport.swift in Sources */,
+				36D1530899987EF165D0AFC6D2B9EAF2 /* FrameCollector.swift in Sources */,
+				4572F22239A84AC23B262764D429E2EB /* Framer.swift in Sources */,
+				894E47358149672D5810C31E4B64AF0D /* HTTPHandler.swift in Sources */,
+				CCDFE079D2DA1E51162E69A3A28BF23F /* NativeEngine.swift in Sources */,
+				F4D86DAACC44D52F4580AD0721D10459 /* Security.swift in Sources */,
+				195E17A825CB18759C7D6511DACCB3E9 /* Server.swift in Sources */,
+				703C0586C478A922E21934D3B149A71E /* Starscream-dummy.m in Sources */,
+				1BCEC1C72A76476B70CE4B032A9D9B32 /* StringHTTPHandler.swift in Sources */,
+				359D3455A362843977E8E3076B7D8162 /* TCPTransport.swift in Sources */,
+				C2809B4763602D15A7384398343AE406 /* Transport.swift in Sources */,
+				0CC54E4D0945262C1B835B699345B034 /* WebSocket.swift in Sources */,
+				C808D0298CC1CD6C13E283663535B259 /* WebSocketServer.swift in Sources */,
+				793D18E42CC454D1C4225339797DB9EB /* WSCompression.swift in Sources */,
+				4D322C7978617308B276D6F4902C2335 /* WSEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ED21F881A0CCADDC118738E0854E7ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OHMySQL;
+			target = 523C0639A1C4C93383B4DF83058D0094 /* OHMySQL */;
+			targetProxy = 00D12C433F34CF8D54E5805C52349BB6 /* PBXContainerItemProxy */;
+		};
+		3CD49B5C6D5090C00698CFE2521D76C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSCalendar;
+			target = 13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */;
+			targetProxy = A54C6CDD854B5C4E3E1CEA2204386B6D /* PBXContainerItemProxy */;
+		};
+		7CE39814DD5510858494F1CB5D4C2E7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Floaty;
+			target = D2A775A88EA787684F2905BCB73F96D1 /* Floaty */;
+			targetProxy = 7C4D3DFA11F06FCD565C4BCED9A990D5 /* PBXContainerItemProxy */;
+		};
+		91363F336CBAB7ECE6902318E8B13628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 92F847D926855F94E3AA71E7E888C390 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09AC8DE60CB9A411DEB524C25921F439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49AAB8192F81D86E12A9CE274AECA939 /* Pods-视讼.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-视讼/Pods-视讼-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-视讼/Pods-视讼.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1583AAE347B230A535FAD8229E30504D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDEBB248F53182F6471FC22A702159D9 /* Floaty.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Floaty/Floaty-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Floaty/Floaty-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Floaty/Floaty.modulemap";
+				PRODUCT_MODULE_NAME = Floaty;
+				PRODUCT_NAME = Floaty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		543E5B7484D28D953F4A4E193786CC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976FB63699EE7A9CF644795D60EC6B4A /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F015DC0CD2F75B57E3F24438316948D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8867FD73EF714E5774506E57F856996A /* Pods-视讼.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-视讼/Pods-视讼-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-视讼/Pods-视讼.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		871B6E28ABA34DAE69824AB9D22D3B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8EA3733F9F205EF057CA60DF44E2993B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 412D9D989B02EB366606A5D9F486A0E9 /* Floaty.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Floaty/Floaty-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Floaty/Floaty-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Floaty/Floaty.modulemap";
+				PRODUCT_MODULE_NAME = Floaty;
+				PRODUCT_NAME = Floaty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF7D283B28F5ABE86028623152367D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F201F761543D6254DF2D3D790602B825 /* OHMySQL.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHMySQL/OHMySQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHMySQL/OHMySQL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OHMySQL/OHMySQL.modulemap";
+				PRODUCT_MODULE_NAME = OHMySQL;
+				PRODUCT_NAME = OHMySQL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B536DC3E70576756BED6A2CECE6D3058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F8F10918487FF1BA0E407644EB0F6D /* FSCalendar.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/FSCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				PRODUCT_MODULE_NAME = FSCalendar;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6AE2643621E9E8617A009966908510E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA17BBD5C0EB4C4F5804F3D0D536FFD1 /* Starscream.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC36F3145259F82DD671BD4EA17FAE96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D705C3B89A3721680E5051BC5C554859 /* OHMySQL.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHMySQL/OHMySQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHMySQL/OHMySQL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OHMySQL/OHMySQL.modulemap";
+				PRODUCT_MODULE_NAME = OHMySQL;
+				PRODUCT_NAME = OHMySQL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0C0D11F8D28EBC73A6F41D1D5009EB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 446F0509B9F1FE2268E74C5F3D5F470C /* FSCalendar.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/FSCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				PRODUCT_MODULE_NAME = FSCalendar;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1747C1FC0D7AED6F717CE32ACF418CF5 /* Build configuration list for PBXNativeTarget "FSCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0C0D11F8D28EBC73A6F41D1D5009EB0 /* Debug */,
+				B536DC3E70576756BED6A2CECE6D3058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */,
+				871B6E28ABA34DAE69824AB9D22D3B7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559ECA96064FF8D4E520C661A9B10569 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543E5B7484D28D953F4A4E193786CC61 /* Debug */,
+				B6AE2643621E9E8617A009966908510E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A417AD38F226C42CC2B519532004DD4 /* Build configuration list for PBXNativeTarget "OHMySQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC36F3145259F82DD671BD4EA17FAE96 /* Debug */,
+				AF7D283B28F5ABE86028623152367D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9035F66F6B321C164BAAA98C62060831 /* Build configuration list for PBXNativeTarget "Floaty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EA3733F9F205EF057CA60DF44E2993B /* Debug */,
+				1583AAE347B230A535FAD8229E30504D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0C079C3D5378AD3D9E802C04B4A3A16 /* Build configuration list for PBXNativeTarget "Pods-视讼" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AC8DE60CB9A411DEB524C25921F439 /* Debug */,
+				6F015DC0CD2F75B57E3F24438316948D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
